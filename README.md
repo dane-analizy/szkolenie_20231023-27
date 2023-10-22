@@ -1,1 +1,1 @@
-# Materiały ze szkolenia Python
+"." 
