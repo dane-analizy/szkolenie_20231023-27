@@ -488,9 +488,18 @@
 
 ##### ZADANIE 15
 
-# Napisz program, który z pliku z Panem Tadeuszem wyświetli wszystkie linie które zaczynają się na literę A.
+# Napisz program, który z pliku z Panem Tadeuszem wyświetli wszystkie linie, które zaczynają się na literę A.
 # Ponumeruj linie
 
 # czy ciąg zaczyna się od innego ciągu?
-s = "ala ma kota"
-print(s.startswith("ala"))
+# s = "ala ma kota"
+# print(s.startswith("ala"))
+
+# rozwiązanie zadania 15
+
+nazwa_pliku = input("Podaj nazwę pliku: ")
+szukany_tekst = input("Podaj szukany tekst: ")
+
+for i, linia in enumerate(open(nazwa_pliku, "r", encoding="utf-8")):
+    if linia.startswith(szukany_tekst):
+       print(f"{i:10d}: {linia.strip()}")
