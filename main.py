@@ -416,10 +416,26 @@
 # for linia in open("text.txt", "r", encoding="utf-8"):
 #     print(f"={linia.strip()}=")
 #     x += 1
-# print(f"liczba lini {x}")
+# print(f"liczba linii {x}")
 
 
 ##### ZADANIE 12
 
 # Napisz program, który z pliku 'tekst.txt' wyświetli kolejne NIEPUSTE linie usuwając z nich białe znaki z początku i końca każdej z linii.
 # Policz ile jest wszystkich linii.
+
+
+# x = 40
+# y = 60
+# print(f"{x/y:.2%}")
+
+# rozwiązanie zadania 13
+
+# x=0
+# for linia in open("tekst.txt", "r", encoding="utf-8"):
+#     if len(linia.strip()) > 0:
+#         print(f"={linia.strip()}=")
+#     x += 1
+# print(f"liczba wszystkich linii {x}")
+
+
