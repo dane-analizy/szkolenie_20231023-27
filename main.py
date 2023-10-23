@@ -1,3 +1,7 @@
+# podręcznik https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf
+# kontakt: lukasz@prokulski.science
+
+
 # print("Hello world!")
 
 # zmienna = 123
@@ -259,4 +263,3 @@ while True:
         print("przedchodzę dalej")
         continue
     print(f"{i} w pętli")
-    
