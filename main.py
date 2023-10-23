@@ -60,9 +60,17 @@
 # Pobierz od użytkownika dwie liczby i wyświetl wynik ich dodawania oraz mnożenia
 
 ### Rozwiązanie zadania 2
+#
+# liczba1 = int(input("Podaj liczbę1 "))
+# liczba2 = int(input("Podaj liczbę2 "))
+#
+# print(f"Suma: {liczba1+liczba2}")
+# print(f"Iloczyn: {liczba1*liczba2}")
 
-liczba1 = int(input("Podaj liczbę1 "))
-liczba2 = int(input("Podaj liczbę2 "))
 
-print(f"Suma: {liczba1+liczba2}")
-print(f"Iloczyn: {liczba1*liczba2}")
+#### ZADANIE 3
+# Napisz program, który pobierze od użytkownika masę i wzrost, a następnie policzy BMI i wypisze wynik na konsolę.
+# BMI = wzrost / masa^2
+# wzrost w metrach
+# masa w kg
+
