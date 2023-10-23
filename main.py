@@ -461,5 +461,13 @@
 
 ##### ZADANIE 14
 # Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika poszukiwaną frazę oraz nazwę pliku.
-# W wyniku wyszukiwarka powinna pokazać w której linii wystąpiła wyszukiwana fraza i całą linię.
+# W wyniku wyszukiwarka powinna pokazać, w której linii wystąpiła wyszukiwana fraza i całą linię.
 # Wyszukiwarka powinna być nieczuła na wielkość liter.
+
+nazwa_pliku = input("Podaj nazwę pliku do przeszukania: ")
+fraza = input("Podaj ciąg do wyszukania: ")
+fraza = fraza.lower()
+
+for i, linia in enumerate(open(nazwa_pliku, 'r', encoding='utf-8')):
+    if fraza in linia.lower():
+        print(f"{i:10d}: {linia.strip()}")
