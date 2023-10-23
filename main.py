@@ -165,3 +165,20 @@
 #     pass
 # else:
 #     print("cos")
+
+# wyświetl 10 pierwszych liczb całkowitych (razem z zerem)
+# for i in range(10):
+#     print(i)
+
+# range od - do
+# for i in range(5, 15):
+#     print(i)
+
+# for i in range(0, 100, 10):
+#     print(i)
+
+# modulo= reszta z dzielenia
+# print(11 % 3)
+
+# ZADANIE 7
+# Wydrukuj liczby od 1 do 100 razem z informacją czy liczba jest parzysta czy nieparzysta.
