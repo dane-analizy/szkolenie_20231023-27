@@ -177,8 +177,29 @@
 # for i in range(0, 100, 10):
 #     print(i)
 
+# krok musi być liczbą całkowitą - to będzie błąd
+# for i in range(0, 100, 0.5):
+#     print(i)
+
+
 # modulo = reszta z dzielenia
 # print(11 % 3)
 
 #### ZADANIE 7
 # Wydrukuj liczby od 1 do 100 razem z informacją czy liczba jest parzysta czy nieparzysta.
+
+# for i in range(1,101):
+#     if i%2 == 0:
+#         print(f"{i}:parzysta")
+#     else:
+#         print(f"{i}:nieparzysta")
+
+
+#### ZADANIE 8
+# Napisz symulator lokaty Symulator ma przyjmować zmienne:
+# - kwotę lokaty
+# - oprocentowanie w skali roku
+# - ilość miesięcy na jaką zakładamy lokatę
+# Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek.
+# Zakładamy kapitalizację odsetek co miesiąc
+
