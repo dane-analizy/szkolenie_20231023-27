@@ -40,6 +40,11 @@
 # f-string z wyrażeniem
 # print(f"Tekst : {tekst_a}\nLiczba: {liczba+10}")
 
-imie = input("Podaj imię: ")
-print(imie)
+# imie = input("Podaj imię: ")
+# print(imie)
+
+
+#### ZADANIE 1
+# Pobierz od użytkownika jego imię i nazwisko (w dwóch krokach) i wyświetl powitanie w postaci "Witaj Imię Nazwisko"
+
 
