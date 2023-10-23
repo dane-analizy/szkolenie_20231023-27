@@ -439,3 +439,15 @@
 # print(f"liczba wszystkich linii {x}")
 
 
+# wczytanie całego pliku na raz
+# text = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
+# print(len(text))
+
+# ile razy w tekście występuje inny tekst?
+# s = "Ala ma kota. ala lubi też psy, a kot Ali to Mruczek"
+# print(s.lower().count('Ala'.lower()))
+
+
+##### ZADANIE 13
+
+# Wczytaj tekst "Pana Tadeusza" i policz ile razy występuje w nim Tadeusz. Nie zważaj na wielkość liter
