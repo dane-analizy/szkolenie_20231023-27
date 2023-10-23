@@ -207,3 +207,56 @@
 # Symulator ma dla każdego miesiąca lokaty wypisać który to miesiąc oraz ile mamy aktualnie zgromadzone po doliczeniu odsetek.
 # Zakładamy kapitalizację odsetek co miesiąc
 
+# Rozwiązanie 8
+# kwota_lokaty = 10_000
+# miesiecy = 24
+# oprocentowanie = 0.02
+#
+# for i in range(1, miesiecy+1):
+#     kwota_lokaty = round(kwota_lokaty + (kwota_lokaty * oprocentowanie/12), 2)
+#     print(f"Kwota dla {i} miesiąca = {kwota_lokaty} ")
+#
+
+
+
+# i = 1
+# while i <= 10:
+#     print(i)
+
+
+# wyświetl kolejne potęgi 2 dokópki są mniejsze niż 1000
+
+# p = 0
+# wynik = 2**p
+# while wynik < 1000:
+#     print(wynik)
+#     p += 1
+#     wynik = 2 ** p
+#
+# print("skończyłem")
+
+
+for i in range(10):
+    if i > 5:
+        print("przerywam")
+        break
+    if i <= 3:
+        print("przedchodzę dalej")
+        continue
+    print(f"{i} w pętli")
+
+
+print("skończyłem")
+
+
+i = 0
+while True:
+    i += 1
+    if i > 5:
+        print("przerywam")
+        break
+    if i <= 3:
+        print("przedchodzę dalej")
+        continue
+    print(f"{i} w pętli")
+    
