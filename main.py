@@ -39,3 +39,7 @@
 
 # f-string z wyrażeniem
 # print(f"Tekst : {tekst_a}\nLiczba: {liczba+10}")
+
+imie = input("Podaj imię: ")
+print(imie)
+
