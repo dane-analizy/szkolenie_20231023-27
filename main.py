@@ -2,6 +2,8 @@
 # https://blog.jsystems.pl/show_post/Bezp%C5%82atny_kurs_Python_od_podstaw/
 # kontakt: lukasz@prokulski.science
 
+# PyCharm https://www.jetbrains.com/pycharm/download/?section=windows
+# Python https://www.python.org/
 
 # print("Hello world!")
 
