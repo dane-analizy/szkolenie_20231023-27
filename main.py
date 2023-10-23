@@ -1,4 +1,5 @@
 # podręcznik https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf
+# https://blog.jsystems.pl/show_post/Bezp%C5%82atny_kurs_Python_od_podstaw/
 # kontakt: lukasz@prokulski.science
 
 
@@ -452,5 +453,13 @@
 
 # Wczytaj tekst "Pana Tadeusza" i policz ile razy występuje w nim Tadeusz. Nie zważaj na wielkość liter
 
-text = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
-print(text.lower().count("tadeusz"))
+# rozwiązanie zadania 13
+# text = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
+# print(text.lower().count("tadeusz"))
+
+
+
+##### ZADANIE 14
+# Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika poszukiwaną frazę oraz nazwę pliku.
+# W wyniku wyszukiwarka powinna pokazać w której linii wystąpiła wyszukiwana fraza i całą linię.
+# Wyszukiwarka powinna być nieczuła na wielkość liter.
