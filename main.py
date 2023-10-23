@@ -346,3 +346,53 @@
 #### ZADANIE 10
 #  Napisz program, który przyjmie od użytkownika ciąg tekstowy, następnie usunie z niego znaki: ,.?!
 #  a następnie powiększony do dużych liter wyświetli w konsoli.
+
+# rozwiązanie zadania 10
+
+# wersja A
+# ciag = str(input("Wpisz ciąg znaków, możesz używać znaków specjalnych "))
+# print(ciag.replace('?','').replace('.','').replace(',','').replace('!','').upper())
+
+
+# wersja B
+# text = input("Podaj ciąg znaków: ")
+#
+# text = text.replace(' ', '')
+# text = text.replace('?', '')
+# text = text.replace('.', '')
+# text = text.replace(',', '')
+# text = text.replace('!', '')
+#
+# print(text.upper())
+
+# wersja C
+# text = input("Podaj ciąg znaków: ")
+# forbidden = ' ,.?!'
+# new_text = ''
+# for l in text:
+#     if l in forbidden:
+#         continue
+#     else:
+#         new_text += l
+#
+# print(new_text.upper())
+
+# wersja D
+# text = input("Podaj ciąg znaków: ")
+# forbidden = ' ,.?!^'
+# for l in forbidden:
+#     text = text.replace(l, '')
+#
+# print(text.upper())
+
+
+# s = 'Ala ma kota'
+# i = 0
+# for l in s:
+#     print(i, l)
+#     i = i + 1
+
+# s = 'Ala ma kota'
+# for i, l in enumerate(s):
+#     if i % 2 == 0:
+#         print(i, l)
