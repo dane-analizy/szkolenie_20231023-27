@@ -49,6 +49,12 @@
 
 ### Rozwiązanie zadania 1
 
-imie = input("Podaj imie: ")
-nazwisko = input("Podaj nazwisko: ")
-print("Witaj " + imie + " " + nazwisko)
+# imie = input("Podaj imie: ")
+# nazwisko = input("Podaj nazwisko: ")
+# print("Witaj " + imie + " " + nazwisko)
+#
+# print(f"Witaj {imie} {nazwisko}")
+
+
+#### ZADANIE 2
+# Pobierz od użytkownika dwie liczby i wyświetl wynik ich dodawania
