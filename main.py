@@ -132,6 +132,8 @@
 # 35 - 39,999 => otyłość II stopnia (duża)
 # > 40 otyłość III stopnia (chorobliwa)
 
+# rozwiązanie zadania 6
+
 # weight = input("Podaj masę [kg]: ")
 # weight = float(weight)
 #
@@ -188,6 +190,8 @@
 #### ZADANIE 7
 # Wydrukuj liczby od 1 do 100 razem z informacją czy liczba jest parzysta czy nieparzysta.
 
+
+# Rozwiązanie zadania 7
 # for i in range(1,101):
 #     if i%2 == 0:
 #         print(f"{i}:parzysta")
