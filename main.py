@@ -396,3 +396,13 @@
 # for i, l in enumerate(s):
 #     if i % 2 == 0:
 #         print(i, l)
+
+
+# for linia in open("tekst.txt", "r", encoding="utf-8"):
+#     print(f"={linia}=")
+
+
+##### ZADANIE 11
+
+# Napisz program, który z pliku 'tekst.txt' wyświetli kolejne linie usuwając z nich białe znaki z początku i końca każdej z linii.
+# Policz ile jest wszystkich linii.
