@@ -40,6 +40,10 @@
 # f-string z wyrażeniem
 # print(f"Tekst : {tekst_a}\nLiczba: {liczba+10}")
 
+# formatowanie f-string
+# 2023-10-23 10:14:56
+# {dt:%Y-%m-%d %H:%M:%S}
+
 # imie = input("Podaj imię: ")
 # print(imie)
 
@@ -70,10 +74,30 @@
 
 #### ZADANIE 3
 # Napisz program, który pobierze od użytkownika masę i wzrost, a następnie policzy BMI i wypisze wynik na konsolę.
-# BMI = wzrost / masa^2
+# BMI = masa / wzrost^2
 # wzrost w metrach
 # masa w kg
 
-
 # liczba zmiennoprzecinkowa z tekstu: float()
 # print(float("1.23")*2)
+
+# liczba X do potęgi N
+# x**n
+# pow(x, n)
+
+# Rozwiązanie zadania 3
+
+# zaokrąglenie w obliczeniach
+# masa = float(input("Podaj masę w kg: "))
+# wzrost = float(input("Podaj wzrost w m: "))
+# bmi = round(masa / wzrost**2, 2)
+# print(bmi)
+# print(f"Przy wzroście {wzrost}m i masie {masa}kg Twój wskaźnik BMI to {bmi}")
+
+# zaokrąglenie przy wyświetlaniu
+# masa = float(input("Podaj masę w kg: "))
+# wzrost = float(input("Podaj wzrost w m: "))
+# bmi = masa / wzrost**2
+# print(f"Przy wzroście {wzrost}m i masie {masa}kg Twój wskaźnik BMI to {bmi:.2f}")
+
+
