@@ -47,4 +47,8 @@
 #### ZADANIE 1
 # Pobierz od użytkownika jego imię i nazwisko (w dwóch krokach) i wyświetl powitanie w postaci "Witaj Imię Nazwisko"
 
+### Rozwiązanie zadania 1
 
+imie = input("Podaj imie: ")
+nazwisko = input("Podaj nazwisko: ")
+print("Witaj " + imie + " " + nazwisko)
