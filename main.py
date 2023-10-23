@@ -74,3 +74,6 @@
 # wzrost w metrach
 # masa w kg
 
+
+# liczba zmiennoprzecinkowa z tekstu: float()
+# print(float("1.23")*2)
