@@ -491,5 +491,6 @@
 # Napisz program, który z pliku z Panem Tadeuszem wyświetli wszystkie linie które zaczynają się na literę A.
 # Ponumeruj linie
 
+# czy ciąg zaczyna się od innego ciągu?
 s = "ala ma kota"
-print(s.startswith("a"))
+print(s.startswith("ala"))
