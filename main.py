@@ -267,3 +267,82 @@
 
 ##### ZADANIE 9
 # Pobierz od użytkownika liczbę i rób to tak długo dopóki użytkownik nie wpisze liczby 17. Po podaniu 17 napisz ile było prób.
+
+# Rozwiązanie zadania 9
+# i=0
+# x= 0
+# while i != 17 :
+#       i = int(input("wpisz liczbe 17 "))
+#       x = x+1
+# print(f"swietnie wpisales 1717 za {x} razem Brawo")
+
+
+# liczba_prob = 0
+# dobra_odpowiedz = 17
+# odpowiedz = -99999
+# while odpowiedz != dobra_odpowiedz:
+#     odpowiedz = int(input("wpisz liczbe 17 "))
+#     liczba_prob = liczba_prob+1
+#
+# print(odpowiedz)
+# print(f"swietnie wpisales 1717 za {liczba_prob} razem Brawo")
+
+
+# liczba_prob = 0
+# dobra_odpowiedz = 17
+# # walrus operator - Python 3.8 i nowsze
+# while odpowiedz := int(input("wpisz liczbe 17 ")) != dobra_odpowiedz:
+#     liczba_prob = liczba_prob+1
+#
+# print(odpowiedz)
+# print(f"swietnie wpisales 1717 za {liczba_prob} razem Brawo")
+#
+
+
+#
+# zagadka = int(input("Zgadnij liczbę całkowitą: "))
+# i = 1
+#
+# while True:
+#     if zagadka == 17:
+#         print(f"Brawo zgadłeś. Chodziło o liczbę {zagadka}. Zgadles za {i} razem")
+#         break
+#     else:
+#         zagadka = int(input("Nie udało się. Zgadnij jeszcze raz, podaj liczbę "))
+#         i = i + 1
+
+
+# s = "ala ma kota"
+# print(type(s))
+#
+# i = 1243
+# print(type(i))
+#
+# f = 1.24215
+# print(type(f))
+
+
+# s = "   Ala ma KOTA "
+# print(s)
+# print(s.lower())
+# print(s.upper())
+# print(s.capitalize())
+# print(s.title())
+# print(f"={s}=")
+# print(f"={s.strip()}=")
+
+# haslo = "1234bleble!"
+# haslo_do_sprawdzenia = "   1234BlebLe!   "
+# print(haslo_do_sprawdzenia.lower() == haslo.lower().strip())
+
+# s = "   Ala ma KOTA "
+# s = "123456789\n"
+# print(f"={s.strip('a ')}=")
+# print(len(s))
+
+# print(s.replace('Al', 'b'))
+
+
+#### ZADANIE 10
+#  Napisz program, który przyjmie od użytkownika ciąg tekstowy, następnie usunie z niego znaki: ,.?!
+#  a następnie powiększony do dużych liter wyświetli w konsoli.
