@@ -57,4 +57,12 @@
 
 
 #### ZADANIE 2
-# Pobierz od użytkownika dwie liczby i wyświetl wynik ich dodawania
+# Pobierz od użytkownika dwie liczby i wyświetl wynik ich dodawania oraz mnożenia
+
+### Rozwiązanie zadania 2
+
+liczba1 = int(input("Podaj liczbę1 "))
+liczba2 = int(input("Podaj liczbę2 "))
+
+print(f"Suma: {liczba1+liczba2}")
+print(f"Iloczyn: {liczba1*liczba2}")
