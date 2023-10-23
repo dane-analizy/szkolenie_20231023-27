@@ -406,3 +406,7 @@
 
 # Napisz program, który z pliku 'tekst.txt' wyświetli kolejne linie usuwając z nich białe znaki z początku i końca każdej z linii.
 # Policz ile jest wszystkich linii.
+
+# .lstrip()
+# .rstrip()
+# .strip()
