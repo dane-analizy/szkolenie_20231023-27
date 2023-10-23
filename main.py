@@ -464,10 +464,32 @@
 # W wyniku wyszukiwarka powinna pokazać, w której linii wystąpiła wyszukiwana fraza i całą linię.
 # Wyszukiwarka powinna być nieczuła na wielkość liter.
 
-nazwa_pliku = input("Podaj nazwę pliku do przeszukania: ")
-fraza = input("Podaj ciąg do wyszukania: ")
-fraza = fraza.lower()
+# rozwiązanie zadania 14
 
-for i, linia in enumerate(open(nazwa_pliku, 'r', encoding='utf-8')):
-    if fraza in linia.lower():
-        print(f"{i:10d}: {linia.strip()}")
+# nazwa_pliku = input("Podaj nazwę pliku do przeszukania: ")
+# fraza = input("Podaj ciąg do wyszukania: ")
+# fraza = fraza.lower()
+#
+# for i, linia in enumerate(open(nazwa_pliku, 'r', encoding='utf-8')):
+#     if fraza in linia.lower():
+#         print(f"{i:10d}: {linia.strip()}")
+#
+
+
+# wczytywanie po 100-znakowym buforze
+
+# with open("pan-tadeusz.txt", 'r', encoding='utf-8') as fp:
+#     for i in range(10):
+#         buf = fp.read(100)
+#         print(buf)
+#         print('==' * 20)
+
+
+
+##### ZADANIE 15
+
+# Napisz program, który z pliku z Panem Tadeuszem wyświetli wszystkie linie które zaczynają się na literę A.
+# Ponumeruj linie
+
+s = "ala ma kota"
+print(s.startswith("a"))
