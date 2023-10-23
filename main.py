@@ -177,8 +177,8 @@
 # for i in range(0, 100, 10):
 #     print(i)
 
-# modulo= reszta z dzielenia
+# modulo = reszta z dzielenia
 # print(11 % 3)
 
-# ZADANIE 7
+#### ZADANIE 7
 # Wydrukuj liczby od 1 do 100 razem z informacją czy liczba jest parzysta czy nieparzysta.
