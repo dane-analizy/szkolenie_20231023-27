@@ -240,26 +240,30 @@
 # print("skończyłem")
 
 
-for i in range(10):
-    if i > 5:
-        print("przerywam")
-        break
-    if i <= 3:
-        print("przedchodzę dalej")
-        continue
-    print(f"{i} w pętli")
+# for i in range(10):
+#     if i > 5:
+#         print("przerywam")
+#         break
+#     if i <= 3:
+#         print("przedchodzę dalej")
+#         continue
+#     print(f"{i} w pętli")
+#
+#
+# print("skończyłem")
+#
+#
+# i = 0
+# while True:
+#     i += 1
+#     if i > 5:
+#         print("przerywam")
+#         break
+#     if i <= 3:
+#         print("przedchodzę dalej")
+#         continue
+#     print(f"{i} w pętli")
 
 
-print("skończyłem")
-
-
-i = 0
-while True:
-    i += 1
-    if i > 5:
-        print("przerywam")
-        break
-    if i <= 3:
-        print("przedchodzę dalej")
-        continue
-    print(f"{i} w pętli")
+##### ZADANIE 9
+# Pobierz od użytkownika liczbę i rób to tak długo dopóki użytkownik nie wpisze liczby 17. Po podaniu 17 napisz ile było prób.
