@@ -451,3 +451,6 @@
 ##### ZADANIE 13
 
 # Wczytaj tekst "Pana Tadeusza" i policz ile razy występuje w nim Tadeusz. Nie zważaj na wielkość liter
+
+text = open("pan-tadeusz.txt", "r", encoding="utf-8").read()
+print(text.lower().count("tadeusz"))
