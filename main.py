@@ -101,3 +101,5 @@
 # print(f"Przy wzroście {wzrost}m i masie {masa}kg Twój wskaźnik BMI to {bmi:.2f}")
 
 
+#### ZADANIE 4
+# Pobierz od użytkownika liczbę całkowitą i wypisz czy jest dodatania
