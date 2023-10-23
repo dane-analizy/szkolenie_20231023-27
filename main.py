@@ -102,4 +102,17 @@
 
 
 #### ZADANIE 4
-# Pobierz od użytkownika liczbę całkowitą i wypisz czy jest dodatania
+# Pobierz od użytkownika liczbę całkowitą i wypisz czy jest dodatnia
+
+
+#### ZADANIE 5
+# Pobierz od użytkownika liczbę całkowitą i wypisz czy jest dodatnia, ujemna czy jest zerem
+
+liczba = int(input("Podaj liczbę:"))
+
+if liczba > 0:
+    print("Liczba jest dodatnia")
+elif liczba < 0:
+    print("Liczba jest ujemna")
+else:
+    print("Liczba jest zerem")
