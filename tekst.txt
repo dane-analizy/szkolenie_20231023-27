@@ -1,4 +1,8 @@
 linia 1
 linia 2
+
+
    linia trzecia ze spacjami na początku
+
+
 linia 4 ze spacjami na końcu       

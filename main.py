@@ -410,3 +410,16 @@
 # .lstrip()
 # .rstrip()
 # .strip()
+
+# rozwiązanie zadania 11
+# x=0
+# for linia in open("text.txt", "r", encoding="utf-8"):
+#     print(f"={linia.strip()}=")
+#     x += 1
+# print(f"liczba lini {x}")
+
+
+##### ZADANIE 12
+
+# Napisz program, który z pliku 'tekst.txt' wyświetli kolejne NIEPUSTE linie usuwając z nich białe znaki z początku i końca każdej z linii.
+# Policz ile jest wszystkich linii.
