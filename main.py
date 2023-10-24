@@ -238,3 +238,20 @@
 #### ZADANIE 21
 # Korzystając z list składanych wygeneruj listę 10 losowych liczb.
 # Wyświetl je w kolejności od najmniejszej do największej.
+
+# rozwiązanie zadania 21
+# import random
+# print( sorted( [random.randint(1, 100) for _ in range(10)] ) )
+
+# l = []
+# for i in range(20):
+#     if i > 5:
+#         l.append(i)
+# print(l)
+#
+# l = [ i*2 for i in range(20) if i > 5 ]
+# print(l)
+
+#### ZADANIE 22
+# Korzystając z list składanych wygeneruj listę 20 losowych liczb.
+# Na listę powinny trafić tylko liczby parzyste.
