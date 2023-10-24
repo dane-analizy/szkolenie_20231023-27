@@ -102,6 +102,16 @@
 # lista[5] = 'abc'
 # print(lista_zapasowa)
 #
+
+# "pseudo" kopia listy - zmiana na oryginale zmienia "kopię"
+# lista = list(range(1, 11))
+# lista_zapasowa = lista
+# print('pierwsza "kopia"', lista_zapasowa)
+# lista_zapasowa[5] = 'abc'
+# print("po zmianie na \"lista zapasowa\"", lista_zapasowa)
+# print(lista)
+
+
 # # "prawdziwa" kopia listy - zmiana na oryginale NI Ezmienia kopii
 # lista = list(range(1, 11))
 # lista_zapasowa = lista.copy()
