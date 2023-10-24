@@ -14,3 +14,6 @@ for litera in lista_liter:
 print("lista_mieszana")
 for element in lista_mieszana:
     print(element)
+
+#### ZADANIE 16
+# Zbududuj listę elementów różnych typów. Przeiteruj po niej i wyświetl kolejne elementy. Wypisz typ każdego z elementów.
