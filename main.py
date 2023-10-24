@@ -355,7 +355,28 @@
 #     people_clean.append(
 #         [person[0], person[1], weight, height, bmi]
 #     )
-#
+
 # # wyświetlenie wyniku
 # for person in people_clean:
 #     print(f"{person[0]} {person[1]} ({100 * person[3]} cm, {person[2]} kg) - BMI = {person[4]:.1f}")
+
+
+# print(sorted(people_clean))
+
+# sortowanei od największej
+# l = [1, 5, 6, 8, 7]
+# print(sorted(l, reverse=True))
+
+import random
+
+# l = [ [4, 'd'], [1, 'c'], [2, 'b'], [3, 'a']]
+# print(sorted(l, key=lambda x: x[1]))
+
+# def funkcja(x):
+#     return x[1]
+#
+# print(sorted(l, key=lambda x: funkcja(x)))
+
+#### ZADANIE 26
+# Wczytaj dane z pliku dane.csv.
+# Dla każdego policz wskaźnik BMI, a następnie posortuj listę wartości BMI rosnąco. Wyświetl wynik na konsoli
