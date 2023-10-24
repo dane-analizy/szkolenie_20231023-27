@@ -515,3 +515,27 @@ import random
 #### ZADANIE 29
 
 # Do wyszukiwania plików dodaj sortowanie po pełnej ścieżce
+
+import os
+
+start_path = input("Gdzie mam zacząć?: ")
+name = input("Czego mam szukać?: ")
+
+results = []
+
+for s in os.walk(start_path):
+    sciezka = s[0] # aktualny "przeszukiwany" katalog (string)
+    katalogi = s[1]  # katalogi w nim się znajdujące (lista stringów)
+    pliki = s[2] # pliki w nim się znajdujące (lista stringów)
+
+    for katalog in katalogi:
+        if name.lower() in katalog.lower():
+            results.append( (os.path.join(sciezka, katalog), "katalog") )
+
+    for plik in pliki:
+        if name.lower() in plik.lower():
+            results.append((os.path.join(sciezka, plik), "plik"))
+
+results.sort(key=lambda k: (k[1], k[0]) )
+for res in results:
+    print(res)
