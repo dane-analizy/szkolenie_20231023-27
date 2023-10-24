@@ -277,9 +277,17 @@
 # print(s.split(' '))
 
 # s = "Zenon;Brzęczyk;95;164"
-# print(s.split(';'))
+# l = s.split(';')
+# print(l)
 
 #### ZADANIE 23
 # Wczytaj do listy zawartość pliku dane.csv. Kolumny rozdzielone są średnikiem. Przygotuj listę list z zawartością pliku.
 # Wyświetl zawartość zbudowanej listy.
 # Spróbuj to zrobić korzystając z list składanych.
+
+file_name = 'dane.csv'
+people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
+print(people)
+
+##### ZADANIE 24
+# Korzystając z poprzedniego zadania napisz program, który z pliku dane.csv wyświetli powiększone imię i nazwisko.
