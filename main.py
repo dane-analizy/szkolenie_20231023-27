@@ -363,7 +363,7 @@
 
 # print(sorted(people_clean))
 
-# sortowanei od największej
+# sortowanie od największej
 # l = [1, 5, 6, 8, 7]
 # print(sorted(l, reverse=True))
 
