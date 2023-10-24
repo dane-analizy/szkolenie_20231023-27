@@ -516,26 +516,50 @@ import random
 
 # Do wyszukiwania plików dodaj sortowanie po pełnej ścieżce
 
-import os
 
-start_path = input("Gdzie mam zacząć?: ")
-name = input("Czego mam szukać?: ")
+# rozwiązanie
+# import os
+#
+# start_path = input("Gdzie mam zacząć?: ")
+# name = input("Czego mam szukać?: ")
+#
+# results = []
+#
+# for s in os.walk(start_path):
+#     sciezka = s[0] # aktualny "przeszukiwany" katalog (string)
+#     katalogi = s[1]  # katalogi w nim się znajdujące (lista stringów)
+#     pliki = s[2] # pliki w nim się znajdujące (lista stringów)
+#
+#     for katalog in katalogi:
+#         if name.lower() in katalog.lower():
+#             results.append( (os.path.join(sciezka, katalog), "katalog") )
+#
+#     for plik in pliki:
+#         if name.lower() in plik.lower():
+#             results.append((os.path.join(sciezka, plik), "plik"))
+#
+# results.sort(key=lambda k: (k[1], k[0]) )
+# for res in results:
+#     print(res)
 
-results = []
 
-for s in os.walk(start_path):
-    sciezka = s[0] # aktualny "przeszukiwany" katalog (string)
-    katalogi = s[1]  # katalogi w nim się znajdujące (lista stringów)
-    pliki = s[2] # pliki w nim się znajdujące (lista stringów)
+# podejście z pathlib
 
-    for katalog in katalogi:
-        if name.lower() in katalog.lower():
-            results.append( (os.path.join(sciezka, katalog), "katalog") )
+import pathlib
 
-    for plik in pliki:
-        if name.lower() in plik.lower():
-            results.append((os.path.join(sciezka, plik), "plik"))
+root = pathlib.Path("katalog")
+# print(root)
 
-results.sort(key=lambda k: (k[1], k[0]) )
-for res in results:
-    print(res)
+# lista elementów w katalogu na jednym poziomie
+# for d in root.iterdir():
+#     print(d)
+
+name = "test"
+
+for d in root.rglob("*"):
+    if name.lower() in d.name.lower():
+        if d.is_file():
+            typ = "plik"
+        else:
+            typ = "katalog"
+        print(d, typ)
