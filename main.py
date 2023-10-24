@@ -476,5 +476,5 @@ for s in os.walk("katalog"):
 
 # Znajdź wszystkie pliki oraz katalogi, które w nazwie mają ciąg podany przez użytkownika.
 # Zapytaj użytkownika od jakiej ścieżki ma szukać. Wyświetl pełne ścieżki do znalezionych
-# elementów i oznacz co jest plikiem a bo katalogiem.
+# elementów i oznacz co jest plikiem, a co katalogiem.
 # Wielkość liter w nazwie plików i katalogów nie ma znaczenia.
