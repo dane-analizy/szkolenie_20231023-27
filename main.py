@@ -118,3 +118,8 @@
 # print(lista_zapasowa)
 # lista[5] = 'abc'
 # print(lista_zapasowa)
+#
+# import sys
+# lista = list(range(1, 11))
+# print(sys.getsizeof(lista))
+
