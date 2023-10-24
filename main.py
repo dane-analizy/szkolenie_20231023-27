@@ -421,5 +421,24 @@ import random
 # krotka[4] ='xxxxx'
 # print(krotka)
 
-krotka = (1, 2, 3, 4, 'a', 'b', 'c')
-krotka.
+# krotka = (1, 5, 32, 43)
+# print(sorted(krotka, reverse=True))
+# print(krotka[::2])
+
+# krotka = tuple([ i for i in range(10) ])
+# print(krotka)
+# lista = list(krotka)
+# print(lista)
+
+# file_name = 'dane.csv'
+# people = tuple([line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8')])
+#
+# # # przetworzenie i oczyszczenie
+# people_clean = []
+# for person in people:
+#     weight = float(person[2])
+#     height = float(person[3]) / 100
+#     bmi = weight / height ** 2
+#     people_clean.append(
+#         [person[0], person[1], weight, height, bmi]
+#     )
