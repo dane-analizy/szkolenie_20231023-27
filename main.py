@@ -225,7 +225,6 @@
 #
 
 
-
 # i = 1
 # while i <= 10:
 #     print(i)
@@ -460,7 +459,6 @@
 # print(text.lower().count("tadeusz"))
 
 
-
 ##### ZADANIE 14
 # Napisz wyszukiwarkę plikową. Wyszukiwarka powinna odebrać od użytkownika poszukiwaną frazę oraz nazwę pliku.
 # W wyniku wyszukiwarka powinna pokazać, w której linii wystąpiła wyszukiwana fraza i całą linię.
@@ -487,7 +485,6 @@
 #         print('==' * 20)
 
 
-
 ##### ZADANIE 15
 
 # Napisz program, który z pliku z Panem Tadeuszem wyświetli wszystkie linie, które zaczynają się na literę A.
@@ -504,4 +501,4 @@ szukany_tekst = input("Podaj szukany tekst: ")
 
 for i, linia in enumerate(open(nazwa_pliku, "r", encoding="utf-8")):
     if linia.startswith(szukany_tekst):
-       print(f"{i:10d}: {linia.strip()}")
+        print(f"{i:10d}: {linia.strip()}")
