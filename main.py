@@ -309,3 +309,53 @@
 # Dla każdego wpisu w pliku dane.csv wyświetl na konsoli informację o imieniu, nazwisku, wadze i wzroście oraz BMI.
 
 # bmi = weight / height ** 2
+
+# print("afafqaf"
+#       "aegeg"
+#       "ageag")
+
+# for i in range(3):
+#     print(f'''afafqaf
+# aegeg
+# ageag''')
+#     print(i)
+
+
+# rozwiązanie wersja A
+#
+# # wczytanie danych
+# file_name = 'dane.csv'
+# people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
+#
+# # przetworzenie i oczyszczenie
+# people_clean = []
+# for person in people:
+#     people_clean.append(
+#         [person[0], person[1], float(person[2]), float(person[3])/100]
+#     )
+#
+# # wyświetlenie wyniku
+# for person in people_clean:
+#     bmi = person[2] / (person[3] ** 2)
+#     print(f"{person[0]} {person[1]} ({100*person[3]} cm, {person[2]} kg) - BMI = {bmi:.1f}")
+#
+
+# rozwiązanie wersja B
+
+# # wczytanie danych
+# file_name = 'dane.csv'
+# people = [line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8')]
+#
+# # przetworzenie i oczyszczenie
+# people_clean = []
+# for person in people:
+#     weight = float(person[2])
+#     height = float(person[3]) / 100
+#     bmi = weight / height ** 2
+#     people_clean.append(
+#         [person[0], person[1], weight, height, bmi]
+#     )
+#
+# # wyświetlenie wyniku
+# for person in people_clean:
+#     print(f"{person[0]} {person[1]} ({100 * person[3]} cm, {person[2]} kg) - BMI = {person[4]:.1f}")
