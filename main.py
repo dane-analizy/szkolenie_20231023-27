@@ -480,26 +480,32 @@ import random
 # Wielkość liter w nazwie plików i katalogów nie ma znaczenia.
 
 
-import os
+# rozwiązanie
+# import os
+#
+# start_path = input("Gdzie mam zacząć?: ")
+# name = input("Czego mam szukać?: ")
+#
+# for s in os.walk(start_path):
+#     sciezka = s[0]
+#     katalogi = s[1]
+#     pliki = s[2]
+#
+#     # print("\nZnalezione katalogi:")
+#     for katalog in katalogi:
+#         if name.lower() in katalog.lower():
+#             # print(f"\tScieżka: {sciezka}, Katalog: {katalog}")
+#             print(f"{os.path.join(sciezka, katalog)} (katalog)")
+#
+#     # print("\nZnalezione pliki:")
+#     for plik in pliki:
+#         if name.lower() in plik.lower():
+#             # print(f"\tScieżka: {sciezka}, Plik: {plik}")
+#             print(f"{os.path.join(sciezka, plik)} (plik)")
+#
+#     # print('=' * 60)
 
-start_path = input("Gdzie mam zacząć?: ")
-name = input("Czego mam szukać?: ")
 
-for s in os.walk(start_path):
-    sciezka = s[0]
-    katalogi = s[1]
-    pliki = s[2]
+#### ZADANIE 29
 
-    # print("\nZnalezione katalogi:")
-    for katalog in katalogi:
-        if name.lower() in katalog.lower():
-            # print(f"\tScieżka: {sciezka}, Katalog: {katalog}")
-            print(f"{os.path.join(sciezka, katalog)} (katalog)")
-
-    # print("\nZnalezione pliki:")
-    for plik in pliki:
-        if name.lower() in plik.lower():
-            # print(f"\tScieżka: {sciezka}, Plik: {plik}")
-            print(f"{os.path.join(sciezka, plik)} (plik)")
-
-    # print('=' * 60)
+# Do wyszukiwania plików dodaj sortowanie po pełnej ścieżce
