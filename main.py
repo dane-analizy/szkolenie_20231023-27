@@ -293,7 +293,7 @@
 # Korzystając z poprzedniego zadania napisz program, który z pliku dane.csv wyświetli powiększone imię i nazwisko.
 
 # file_name = 'dane.csv'
-# people = [ line.strip().split('|') for line in open(file_name, 'r', encoding='utf-8') ]
+# people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
 #
 # for person in people:
 #     print(f"Imię: {person[0].upper()}\nNazwisko: {person[1].upper()}\nWzrost i waga: {person[3].upper()} cm, {person[2].upper()} kg",
@@ -306,6 +306,6 @@
 
 
 #### ZADANIE 25
-# Dla każdego wpisu w pliku data.csv wyświetl na konsoli informację o imieniu, nazwisku, wadze i wzroście oraz BMI.
+# Dla każdego wpisu w pliku dane.csv wyświetl na konsoli informację o imieniu, nazwisku, wadze i wzroście oraz BMI.
 
 # bmi = weight / height ** 2
