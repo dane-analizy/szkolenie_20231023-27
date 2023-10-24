@@ -380,3 +380,27 @@ import random
 #### ZADANIE 26
 # Wczytaj dane z pliku dane.csv.
 # Dla każdego policz wskaźnik BMI, a następnie posortuj listę wartości BMI rosnąco. Wyświetl wynik na konsoli
+
+# # wczytanie danych
+# file_name = 'dane.csv'
+# people = [line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8')]
+#
+# # przetworzenie i oczyszczenie
+# people_clean = []
+# for person in people:
+#     weight = float(person[2])
+#     height = float(person[3]) / 100
+#     bmi = weight / height ** 2
+#     people_clean.append(
+#         [person[0], person[1], weight, height, bmi]
+#     )
+#
+# # sortowanie po BMI, malejąco
+# # people_clean.sort(key=lambda x: x[4], reverse=True)
+#
+# # wyświetlenie wyniku
+# for person in sorted(people_clean, key=lambda x: x[4], reverse=True):
+#     print(f"{person[0]} {person[1]} ({100 * person[3]} cm, {person[2]} kg) - BMI = {person[4]:.1f}")
+
+
+lista = 
