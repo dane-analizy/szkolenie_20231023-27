@@ -150,3 +150,31 @@
 #
 # lista.sort() # równoznaczne z: lista = sorted(lista)
 # print(lista)
+
+
+
+##### ZADANIE 19
+
+# Korzystając z programu z poprzedniego zadania pobierz od użytkownika 10 liczb,
+# zapamiętaj je na liście, a listę wyświetl w kolejności rosnącej. Podaj też sumę wpisanych liczb.
+
+# lista = []
+#
+# for a in range(1,11):
+#     liczba = float(input(f"Podaj {a} liczbę do listy: "))
+#     lista.append(liczba)
+# print(lista)
+#
+# lista.sort()
+# print(lista)
+#
+# # suma "po jednym elemencie"
+# sum_of_numbers: float = 0
+# for a in lista:
+#     sum_of_numbers = sum_of_numbers + a
+# print(sum_of_numbers)
+#
+# # funkcje wbudowane
+# print(sum(lista))
+#
+# print(min(lista), max(lista))
