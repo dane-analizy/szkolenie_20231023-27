@@ -142,3 +142,11 @@
 #     lista.append(liczba)
 #
 # print(lista)
+
+# sortowanie listy
+# lista = [1, 25, 78, 65, 12, 74, 3, 5]
+# print(sorted(lista))
+# print(lista)
+#
+# lista.sort() # równoznaczne z: lista = sorted(lista)
+# print(lista)
