@@ -198,3 +198,21 @@
 # for el in l:
 #     suma = suma + sum(el)
 # print(suma)
+#
+# l1 = [1, 2, 3]
+# l2 = [8, 7, 9, 4]
+
+# for licznik in range(len(l1)):
+#     print(l1[licznik], l2[licznik])
+
+# for licznik, el1 in enumerate(l1):
+#      print(el1, l2[licznik])
+
+# for el1, el2 in zip(l1, l2):
+#     print(el1, el2)
+
+# import random
+# for _ in range(10):
+#     print(random.randint(1, 100))
+
+l =
