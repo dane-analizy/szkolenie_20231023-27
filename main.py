@@ -461,3 +461,7 @@ import random
 # Stwórz dwie krotki: jedną z 10 liczbami losowymi od 0 do 10, druga z 10 liczbami losowymi od 100 do 150.
 # Połącz je w jedną krotkę i wyświetl posortowane od największych
 
+import random
+l1 = tuple([random.randint(0,10) for _ in range(10)])
+l2 = tuple([random.randint(100,150) for _ in range(10)])
+print(tuple(sorted(l1+l2,reverse=True)))
