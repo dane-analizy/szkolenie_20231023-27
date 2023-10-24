@@ -215,4 +215,18 @@
 # for _ in range(10):
 #     print(random.randint(1, 100))
 
-l =
+# lista składana = list comprehention
+
+# l1 = [i for i in range(10)]
+# print(l1)
+#
+#
+# l2 = []
+# for i in range(10):
+#     l2.append(i)
+# print(l2)
+
+
+#### ZADANIE 20
+# Korzystając z list składanych wygeneruj listę 10 kolejnych potęg dwójki.
+# Wyświetl tę istę. Spróbuj zrobić to w jak najkrótszym zapisie.
