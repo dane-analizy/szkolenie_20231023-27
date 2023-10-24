@@ -285,9 +285,16 @@
 # Wyświetl zawartość zbudowanej listy.
 # Spróbuj to zrobić korzystając z list składanych.
 
-file_name = 'dane.csv'
-people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
-print(people)
+# file_name = 'dane.csv'
+# people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
+# print(people)
 
 ##### ZADANIE 24
 # Korzystając z poprzedniego zadania napisz program, który z pliku dane.csv wyświetli powiększone imię i nazwisko.
+
+file_name = 'dane.csv'
+people = [ line.strip().split(';') for line in open(file_name, 'r', encoding='utf-8') ]
+
+for person in people:
+    print(f"Imię: {person[0].upper()}\nNazwisko: {person[1].upper()}\nWzrost i waga: {person[3].upper()} cm, {person[2].upper()} kg",
+          end="\n=======\n")
