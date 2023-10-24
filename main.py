@@ -458,5 +458,6 @@ import random
 # print(krotkawynik, type(krotkawynik))
 
 #### ZADANIE 27
-# Stwórz
+# Stwórz dwie krotki - jedna z 10 liczbami losowymi od 0 do 10, druga z 10 liczbami losowymi od 100 do 150.
+# Połącz je w jedną krotkę i wyświelt posortowane od największych
 
