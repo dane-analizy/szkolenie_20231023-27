@@ -483,20 +483,26 @@ import random
 # rozwiązanie
 # import os
 #
+# # pobieramy od użtykownika "parametry" wyszukiwania
 # start_path = input("Gdzie mam zacząć?: ")
 # name = input("Czego mam szukać?: ")
 #
+# # przeszukujemy rekurencyjnie całe drzewo katalogów - zaczynając od podanej ścieżki
 # for s in os.walk(start_path):
-#     sciezka = s[0]
-#     katalogi = s[1]
-#     pliki = s[2]
+#     sciezka = s[0] # aktualny "przeszukiwany" katalog (string)
+#     katalogi = s[1]  # katalogi w nim się znajdujące (lista stringów)
+#     pliki = s[2] # pliki w nim się znajdujące (lista stringów)
 #
+#     # wyświetlamy znalezione katalogi
 #     # print("\nZnalezione katalogi:")
 #     for katalog in katalogi:
+#         # czy w nazwie katalogu jest szukany tekst?
 #         if name.lower() in katalog.lower():
 #             # print(f"\tScieżka: {sciezka}, Katalog: {katalog}")
+#             # złączenie ścieżki i katalogu w pełną ścieżkę
 #             print(f"{os.path.join(sciezka, katalog)} (katalog)")
 #
+#     # to samo dla plików
 #     # print("\nZnalezione pliki:")
 #     for plik in pliki:
 #         if name.lower() in plik.lower():
