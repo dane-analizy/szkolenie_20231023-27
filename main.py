@@ -23,9 +23,10 @@
 # for element in lista_mieszana:
 #     print(type(element), element)
 
-lista = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# lista = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # print( lista[3] ) # 3 element (== o indeksie 3)
 # print( lista[-2] ) # przedostatni
+
 # print( lista[4:7]) # od 4 do 7
 # print( lista[4:-2]) # do 4 do przedostatniego
 # print( lista[::2]) # co drugi
@@ -33,3 +34,18 @@ lista = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # print( lista[::-2]) # od końca do drugi
 
 
+# lista_list = [ [1, 2, 3], [4, 5, 6], [7, 8, 9]]
+# for element in lista_list:
+#     print(element)
+#     for el in element:
+#         print(el)
+
+
+# liczby = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for x in liczby:
+#     for y in liczby:
+#         print(x, y)
+#
+
+#### ZADANIE 17
+# Wypisz na ekranie tabliczkę mnożenia w zakresie 1-100, pokazując działanie i jego wynik
