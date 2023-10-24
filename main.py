@@ -467,10 +467,10 @@ import random
 # print(tuple(sorted(l1+l2,reverse=True)))
 
 
-import os
-for s in os.walk("katalog"):
-    print(s[0], s[1], s[2])
-    print('=' * 40)
+# import os
+# for s in os.walk("katalog"):
+#     print(s[0], s[1], s[2])
+#     print('=' * 40)
 
 ### ZADANIE 28
 
@@ -478,3 +478,28 @@ for s in os.walk("katalog"):
 # Zapytaj użytkownika od jakiej ścieżki ma szukać. Wyświetl pełne ścieżki do znalezionych
 # elementów i oznacz co jest plikiem, a co katalogiem.
 # Wielkość liter w nazwie plików i katalogów nie ma znaczenia.
+
+
+import os
+
+start_path = input("Gdzie mam zacząć?: ")
+name = input("Czego mam szukać?: ")
+
+for s in os.walk(start_path):
+    sciezka = s[0]
+    katalogi = s[1]
+    pliki = s[2]
+
+    # print("\nZnalezione katalogi:")
+    for katalog in katalogi:
+        if name.lower() in katalog.lower():
+            # print(f"\tScieżka: {sciezka}, Katalog: {katalog}")
+            print(f"{os.path.join(sciezka, katalog)} (katalog)")
+
+    # print("\nZnalezione pliki:")
+    for plik in pliki:
+        if name.lower() in plik.lower():
+            # print(f"\tScieżka: {sciezka}, Plik: {plik}")
+            print(f"{os.path.join(sciezka, plik)} (plik)")
+
+    # print('=' * 60)
