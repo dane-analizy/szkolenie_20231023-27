@@ -178,3 +178,23 @@
 # print(sum(lista))
 #
 # print(min(lista), max(lista))
+
+
+# l1 = [1, 2, 3]
+# l2 = [8, 7, 9]
+
+# dodanie list - rozszerzenie jednej listy o elementy drugiej
+# print(l1 + l2)
+# l1.extend(l2)
+# print(l1)
+# print(l2)
+#
+# print(l1)
+# print([*l1, *l2])
+
+# suma elementów listy list
+# l = [ [1, 2, 3], [5, 6, 7], [1, 3, 2] ]
+# suma = 0
+# for el in l:
+#     suma = suma + sum(el)
+# print(suma)
