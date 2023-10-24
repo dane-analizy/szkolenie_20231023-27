@@ -467,3 +467,14 @@ import random
 # print(tuple(sorted(l1+l2,reverse=True)))
 
 
+import os
+for s in os.walk("katalog"):
+    print(s[0], s[1], s[2])
+    print('=' * 40)
+
+### ZADANIE 28
+
+# Znajdź wszystkie pliki oraz katalogi, które w nazwie mają ciąg podany przez użytkownika.
+# Zapytaj użytkownika od jakiej ścieżki ma szukać. Wyświetl pełne ścieżki do znalezionych
+# elementów i oznacz co jest plikiem a bo katalogiem.
+# Wielkość liter w nazwie plików i katalogów nie ma znaczenia.
