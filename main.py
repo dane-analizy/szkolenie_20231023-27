@@ -123,3 +123,10 @@
 # lista = list(range(1, 11))
 # print(sys.getsizeof(lista))
 
+
+
+
+### ZADANIE 18
+# Napisz program, który pobierze od użytkownika 10 liczb, zapamięta je (zapisze na liście),
+# a na koniec wyświetli całą listę pobranych wartości.
+
