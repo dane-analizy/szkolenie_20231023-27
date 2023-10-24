@@ -403,4 +403,23 @@ import random
 #     print(f"{person[0]} {person[1]} ({100 * person[3]} cm, {person[2]} kg) - BMI = {person[4]:.1f}")
 
 
-lista = 
+# lista = [1, 2, 3, 4, 'a', 'b', 'c']
+# print(lista)
+# krotka = (1, 2, 3, 4, 'a', 'b', 'c')
+# print(krotka)
+
+# krotka = (1, 2, 3, 4, 'a', 'b', 'c')
+# print(krotka[4])
+# for i, element in enumerate(krotka):
+#     print(i, element)
+
+# lista = [1, 2, 3, 4, 'a', 'b', 'c']
+# lista[4] ='xxxxx'
+# print(lista)
+#
+# krotka = (1, 2, 3, 4, 'a', 'b', 'c')
+# krotka[4] ='xxxxx'
+# print(krotka)
+
+krotka = (1, 2, 3, 4, 'a', 'b', 'c')
+krotka.
