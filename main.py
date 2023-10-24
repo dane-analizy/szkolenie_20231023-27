@@ -229,4 +229,12 @@
 
 #### ZADANIE 20
 # Korzystając z list składanych wygeneruj listę 10 kolejnych potęg dwójki.
-# Wyświetl tę istę. Spróbuj zrobić to w jak najkrótszym zapisie.
+# Wyświetl tę listę. Spróbuj zrobić to w jak najkrótszym zapisie.
+
+# rozwiązanie zadania 20
+# print([2**i for i in range(10)])
+
+
+#### ZADANIE 21
+# Korzystając z list składanych wygeneruj listę 10 losowych liczb.
+# Wyświetl je w kolejności od najmniejszej do największej.
