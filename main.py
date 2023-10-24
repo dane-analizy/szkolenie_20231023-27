@@ -255,3 +255,26 @@
 #### ZADANIE 22
 # Korzystając z list składanych wygeneruj listę 20 losowych liczb.
 # Na listę powinny trafić tylko liczby parzyste.
+
+# rozwiązanie 22 - NIE UDAŁO SIĘ przygotować w wersji listy składanej
+# import random
+# l = []
+#
+# while len(l) <= 20:
+#     x = random.randint(1, 100)
+#     if not x % 2:
+#         l.append(x)
+#
+# print(l)
+
+# s = "Ala ma kota"
+# print(type(s))
+# for litera in s:
+#     print(litera)
+
+# print(list(s))
+# rozdzielenie tekstu na słowa
+# print(s.split(' '))
+
+# s = "Zenon;Brzęczyk;95;164"
+# print(s.split(';'))
