@@ -278,3 +278,8 @@
 
 # s = "Zenon;Brzęczyk;95;164"
 # print(s.split(';'))
+
+#### ZADANIE 23
+# Wczytaj do listy zawartość pliku dane.csv. Kolumny rozdzielone są średnikiem. Przygotuj listę list z zawartością pliku.
+# Wyświetl zawartość zbudowanej listy.
+# Spróbuj to zrobić korzystając z list składanych.
