@@ -442,3 +442,21 @@ import random
 #     people_clean.append(
 #         [person[0], person[1], weight, height, bmi]
 #     )
+
+
+# cos = "afageeg"
+# print(len(cos))
+# cos = [1 ,2 ,3 ,3]
+# print(len(cos))
+# cos = ('a', 'b' ,'c')
+# print(len(cos))
+
+# łączenie krotek
+# krotkaa = (1, 2, 3)
+# krotkab = (4, 5, 6)
+# krotkawynik = krotkaa + krotkab
+# print(krotkawynik, type(krotkawynik))
+
+#### ZADANIE 27
+# Stwórz
+
