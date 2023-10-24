@@ -50,9 +50,12 @@
 #### ZADANIE 17
 # Wypisz na ekranie tabliczkę mnożenia w zakresie 1-100, pokazując działanie i jego wynik
 
+# Rozwiązanie zadania 17
 # for x in range(10):
 #     for y in range(10):
 #         print(f"{x+1} * {y+1} = {(x+1)*(y+1)}")
+
+
 
 # print("iterator")
 # lista = range(20)
@@ -130,3 +133,12 @@
 # Napisz program, który pobierze od użytkownika 10 liczb, zapamięta je (zapisze na liście),
 # a na koniec wyświetli całą listę pobranych wartości.
 
+# Rozwiązanie zadania 18
+
+# lista = []
+#
+# for a in range(1,11):
+#     liczba = float(input(f"Podaj {a} liczbę do listy: "))
+#     lista.append(liczba)
+#
+# print(lista)
