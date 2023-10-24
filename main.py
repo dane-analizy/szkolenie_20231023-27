@@ -545,21 +545,23 @@ import random
 
 # podejście z pathlib
 
-import pathlib
+# import pathlib
+#
+# root = pathlib.Path("katalog")
+# # print(root)
+#
+# # lista elementów w katalogu na jednym poziomie
+# # for d in root.iterdir():
+# #     print(d)
+#
+# name = "test"
+#
+# for d in root.rglob("*"):
+#     if name.lower() in d.name.lower():
+#         if d.is_file():
+#             typ = "plik"
+#         else:
+#             typ = "katalog"
+#         print(d, typ)
 
-root = pathlib.Path("katalog")
-# print(root)
 
-# lista elementów w katalogu na jednym poziomie
-# for d in root.iterdir():
-#     print(d)
-
-name = "test"
-
-for d in root.rglob("*"):
-    if name.lower() in d.name.lower():
-        if d.is_file():
-            typ = "plik"
-        else:
-            typ = "katalog"
-        print(d, typ)
