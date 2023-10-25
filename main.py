@@ -204,16 +204,67 @@ import random
 # Wygeneruj 10 tysięcy fałszywych "osób" za pomocą pakietu Faker i zapisz je do pliku osoby.csv
 # Na osobę składa się: imię, nazwisko, ulica, numer domu, miasto, numer telefonu, wiek z przedziału 18-80 lat
 
-import random
-from faker import Faker
-fake = Faker('pl-PL')
-file_name = "osoby.csv"
-l_osob = 10000
-sep= ','
+# import random
+# from faker import Faker
+# fake = Faker('pl-PL')
+# file_name = "osoby.csv"
+# l_osob = 10000
+# sep= ','
+#
+# with open(file_name, 'w', encoding='utf-8') as f:
+#     f.write(f"imię,nazwisko,ulica,numer_domu,miasto,numer_telefonu,wiek\n")
+#     for _ in range(l_osob):
+#         f.write(f"{fake.first_name()}{sep}{fake.last_name()}{sep}{fake.street_name()}"
+#                 f"{sep}{random.randint(1, 159)}{sep}{fake.city()}{sep}{fake.phone_number()}{sep}{random.randint(18, 80)}\n")
+#
 
-with open(file_name, 'w', encoding='utf-8') as f:
-    f.write(f"imię,nazwisko,ulica,numer_domu,miasto,numer_telefonu,wiek\n")
-    for _ in range(l_osob):
-        f.write(f"{fake.first_name()}{sep}{fake.last_name()}{sep}{fake.street_name()}"
-                f"{sep}{random.randint(1, 159)}{sep}{fake.city()}{sep}{fake.phone_number()}{sep}{random.randint(18, 80)}\n")
 
+# słowniki
+
+# d = {
+#     'klucz1': 1,
+#     'klucz2': 'ala ma kota',
+#     'klucz3': [1, 2, 'a', 'b'],
+#     'klucz4': (90,80,70),
+#     'klucz5': { 1,2,3},
+# }
+
+# for k in d:
+#     print(k)
+#
+# print(d.keys())
+#
+# print(d.items())
+
+# for k,v in d.items():
+#     print(f"Klucz = {k}, wartość dla klucza = {v}")
+
+# print(d['klucz3'])
+# # print(d['klucz6'])
+# print(d.get('klucz6', 'nie ma takiego klucza'))
+# print("jeszcze działam")
+
+# d = {}
+#
+# d['klucz_aaaa'] = 123
+#
+# d['klucz_aaaa'] = 'abc'
+#
+# print(d['klucz_aaaa'])
+
+d = {
+    1: 123,
+    2: 567,
+    'a': 'abdf',
+    (1, 'a'): [ 1, 2, 2]
+}
+
+
+for k,v in d.items():
+    print(f"Klucz = {k}, wartość dla klucza = {v}")
+    print(f"d['{k}'] = '{v}'")
+
+##### ZADANIE 35
+# Utwórz pusty słownik d. Dodaj do niego 10 elementów - kluczem jest kolejna liczba w postaci stringu,
+# a wartością dla klucza jest liczba losowa.
+# Wpisz cały słownik
