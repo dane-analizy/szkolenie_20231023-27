@@ -379,39 +379,39 @@
 # print(sorted(d.items(), key=lambda dd: dd[1]))
 
 
-input_file = 'osoby.csv'
-sep = ','
-people = {}
-for id, line in enumerate(open(input_file, 'r', encoding='utf-8')):
-    if id == 0:
-        continue
-    person_data = line.strip().split(sep)
-    person_dict = {
-        'first_name': person_data[0],
-        'last_name': person_data[1],
-        'street': person_data[2],
-        'house_number': person_data[3],
-        'city': person_data[4],
-        'phone': person_data[5],
-        'age': int(person_data[6])
-    }
-    people[id] = person_dict
-
-
-cities = {}
-for v in people.values():
-    if v.get('city') in cities.keys():
-        cities[v.get('city')] += 1
-    else:
-        cities[v.get('city')] = 1
-
-sorted_cities = sorted(cities.items(), key=lambda dd: dd[1], reverse=True)
-
-# filtrowanie listy - na podstawie funkcji pozostaną tylko spełniające ją elementy
-sorted_cities_filtered = list(filter(lambda k: k[1] > 60, sorted_cities))
-
-for city,count in sorted_cities_filtered:
-    print(f"{city:<40}: {count:3d}")
+# input_file = 'osoby.csv'
+# sep = ','
+# people = {}
+# for id, line in enumerate(open(input_file, 'r', encoding='utf-8')):
+#     if id == 0:
+#         continue
+#     person_data = line.strip().split(sep)
+#     person_dict = {
+#         'first_name': person_data[0],
+#         'last_name': person_data[1],
+#         'street': person_data[2],
+#         'house_number': person_data[3],
+#         'city': person_data[4],
+#         'phone': person_data[5],
+#         'age': int(person_data[6])
+#     }
+#     people[id] = person_dict
+#
+#
+# cities = {}
+# for v in people.values():
+#     if v.get('city') in cities.keys():
+#         cities[v.get('city')] += 1
+#     else:
+#         cities[v.get('city')] = 1
+#
+# sorted_cities = sorted(cities.items(), key=lambda dd: dd[1], reverse=True)
+#
+# # filtrowanie listy - na podstawie funkcji pozostaną tylko spełniające ją elementy
+# sorted_cities_filtered = list(filter(lambda k: k[1] > 60, sorted_cities))
+#
+# for city,count in sorted_cities_filtered:
+#     print(f"{city:<40}: {count:3d}")
 
 
 
@@ -421,3 +421,23 @@ for city,count in sorted_cities_filtered:
 # Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
 # Użyj słowników - kluczem niech będzie słowo zapisane małymi literami, a wartością - liczba jego wystąpień.
 
+pan_tadeusz = open('pan-tadeusz.txt', 'r', encoding='utf-8').read()
+pan_tadeusz = pan_tadeusz.lower()
+
+biale_znak = '.,:;!?-…—'
+for bz in biale_znak:
+    pan_tadeusz = pan_tadeusz.replace(bz, ' ')
+
+pan_tadeusz_slowa = pan_tadeusz.split(' ')
+pan_tadeusz_slownik = {}
+for slowo in pan_tadeusz_slowa:
+    slowo = slowo.strip()
+    if len(slowo) > 5:
+        if slowo in pan_tadeusz_slownik.keys():
+            pan_tadeusz_slownik[slowo] += 1
+        else:
+            pan_tadeusz_slownik[slowo] = 1
+
+for k,v in pan_tadeusz_slownik.items():
+    if v > 50:
+        print(f"{k}: {v:3d}")
