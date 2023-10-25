@@ -141,7 +141,7 @@
 # podanych przez użytkownika
 # moje_liczby = { 1, 2, 3, 4, 5, 6 }
 
-import random
+# import random
 
 # losowe 6 liczb z zakresu 1-48 (48, bo range nie domyka przedziału przy końcu!)
 # random.sample(range(1, 49), 6)
