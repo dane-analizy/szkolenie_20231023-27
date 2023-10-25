@@ -338,7 +338,26 @@
 # i niech będzie to klucz w słowniku.
 # Dla przypomnienia: na osobę składa się: imię, nazwisko, ulica, numer domu, miasto, numer telefonu, wiek z przedziału 18-80 lat.
 
-ludzie = {
-    1: {imie, nazwisko},
-    2: {imie, nazwisko}
-}
+# imię,nazwisko,ulica,numer_domu,miasto,numer_telefonu,wiek
+# Rafał,Klucznik,Konarskiego,94,Będzin,+48 504 307 537,59
+
+input_file = 'osoby.csv'
+sep = ','
+people = {}
+with open(input_file, 'r', encoding='utf-8') as f:
+    for id, line in enumerate(f):
+        person_data = line.strip().split(sep)
+        person_dict = {
+            'first_name': person_data[0],
+            'last_name': person_data[1],
+            'street': person_data[2],
+            'house_number': person_data[3],
+            'city': person_data[4],
+            'phone': person_data[5],
+            'age': int(person_data[6])
+        }
+        if id == 0:
+            continue
+        people[id] = person_dict
+
+print(people)
