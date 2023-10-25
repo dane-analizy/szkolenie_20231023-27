@@ -9,3 +9,6 @@ def save_to_file(lista: list[tuple], file_name: str, enc: str='utf-8', sep: str=
         for t in lista:
             linia = sep.join(t)+'\n'
             f.write(linia)
+
+
+nazwa_pliku = 'jasio.csv'

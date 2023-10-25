@@ -552,7 +552,23 @@
 # moduły
 # funkcja get_file_content oraz save_to_file zostały przeniesione do pliku file_op.py
 
-from file_op import get_file_content, save_to_file
+# import obiektów z modułu - najbardziej polecane
+# from file_op import get_file_content, save_to_file, nazwa_pliku
+#
+# lista = get_file_content('dane.csv')
+# save_to_file(lista, 'dane_przepisane_ver_2.csv', sep=':')
+# print(nazwa_pliku)
 
-lista = get_file_content('dane.csv')
-save_to_file(lista, 'dane_przepisane_ver_2.csv', sep=':')
+# import całego modułu
+# import file_op
+#
+# lista = file_op.get_file_content('dane.csv')
+# file_op.save_to_file(lista, 'dane_przepisane_ver_3.csv', sep='+')
+# print(file_op.nazwa_pliku)
+
+# nie rób tak!
+# from file_op import *
+#
+# lista = get_file_content('dane.csv')
+# save_to_file(lista, 'dane_przepisane_ver_4.csv', sep='+=+')
+# print(nazwa_pliku)
