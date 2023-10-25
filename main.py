@@ -526,3 +526,13 @@ def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tup
     return [ tuple(line.strip().split(sep))
              for line in open(file_name, 'r', encoding=enc)
              if len(line.strip()) > 0 ]
+
+
+
+# print(get_file_content('dane.csv', sep=','))
+# print(get_file_content('osoby.csv', sep=',')[:10])
+
+
+### ZADANIE 40
+# Użyj funkcji get_file_content() (przygotowanej w poprzednim zadaniu) do wczytania danych z pliku
+# i wyświetlenia ich linia po linii
