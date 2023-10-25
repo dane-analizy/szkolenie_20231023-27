@@ -514,3 +514,9 @@
 #
 # print(dodaj(1, 2))
 # print(dodaj(33))
+
+
+### ZADANIE 40
+# Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku, którego nazwę przekażemy przez pierwszy argument
+# funkcji. Plik ma być otwarty z kodowaniem podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie podane
+# ma przyjąć kodowanie utf-8. Trzecim parametrem jest separator, domyślnie średnik.
