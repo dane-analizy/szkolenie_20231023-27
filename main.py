@@ -341,27 +341,39 @@
 # imię,nazwisko,ulica,numer_domu,miasto,numer_telefonu,wiek
 # Rafał,Klucznik,Konarskiego,94,Będzin,+48 504 307 537,59
 
-input_file = 'osoby.csv'
-sep = ','
-people = {}
-for id, line in enumerate(open(input_file, 'r', encoding='utf-8')):
-    if id == 0:
-        continue
-    person_data = line.strip().split(sep)
-    person_dict = {
-        'first_name': person_data[0],
-        'last_name': person_data[1],
-        'street': person_data[2],
-        'house_number': person_data[3],
-        'city': person_data[4],
-        'phone': person_data[5],
-        'age': int(person_data[6])
-    }
-    people[id] = person_dict
-
-print(people[1410])
-
+# input_file = 'osoby.csv'
+# sep = ','
+# people = {}
+# for id, line in enumerate(open(input_file, 'r', encoding='utf-8')):
+#     if id == 0:
+#         continue
+#     person_data = line.strip().split(sep)
+#     person_dict = {
+#         'first_name': person_data[0],
+#         'last_name': person_data[1],
+#         'street': person_data[2],
+#         'house_number': person_data[3],
+#         'city': person_data[4],
+#         'phone': person_data[5],
+#         'age': int(person_data[6])
+#     }
+#     people[id] = person_dict
+#
+# print(people[1410])
+#
 
 ### ZADANIE 37
 # Jako ciąg dalszy zadania 36 - policz w którym mieście mieszka najwięcej osób.
 # Listę zaprezentuj w kolejności od największej liczby mieszkańców
+
+# sortowanie słowników
+d = {
+    "a": 1,
+    "c": 2,
+    "b": 5
+}
+# po kluczu
+print(sorted(d.items(), key=lambda dd: dd[0]))
+
+# po wartości
+print(sorted(d.items(), key=lambda dd: dd[1]))
