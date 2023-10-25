@@ -536,3 +536,7 @@ def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tup
 ### ZADANIE 40
 # Użyj funkcji get_file_content() (przygotowanej w poprzednim zadaniu) do wczytania danych z pliku
 # i wyświetlenia ich linia po linii
+
+l = get_file_content('dane.csv')
+for i in l:
+    print( ', '.join(i))
