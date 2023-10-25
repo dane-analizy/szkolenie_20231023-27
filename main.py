@@ -421,23 +421,71 @@
 # Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
 # Użyj słowników - kluczem niech będzie słowo zapisane małymi literami, a wartością - liczba jego wystąpień.
 
-pan_tadeusz = open('pan-tadeusz.txt', 'r', encoding='utf-8').read()
-pan_tadeusz = pan_tadeusz.lower()
+# pan_tadeusz = open('pan-tadeusz.txt', 'r', encoding='utf-8').read()
+# pan_tadeusz = pan_tadeusz.lower()
+#
+# biale_znak = '.,:;!?-…—'
+# for bz in biale_znak:
+#     pan_tadeusz = pan_tadeusz.replace(bz, ' ')
+#
+# pan_tadeusz_slowa = pan_tadeusz.split(' ')
+# pan_tadeusz_slownik = {}
+# for slowo in pan_tadeusz_slowa:
+#     slowo = slowo.strip()
+#     if len(slowo) > 5:
+#         if slowo in pan_tadeusz_slownik.keys():
+#             pan_tadeusz_slownik[slowo] += 1
+#         else:
+#             pan_tadeusz_slownik[slowo] = 1
+#
+# for k,v in pan_tadeusz_slownik.items():
+#     if v > 50:
+#         print(f"{k}: {v:3d}")
 
-biale_znak = '.,:;!?-…—'
-for bz in biale_znak:
-    pan_tadeusz = pan_tadeusz.replace(bz, ' ')
 
-pan_tadeusz_slowa = pan_tadeusz.split(' ')
-pan_tadeusz_slownik = {}
-for slowo in pan_tadeusz_slowa:
-    slowo = slowo.strip()
-    if len(slowo) > 5:
-        if slowo in pan_tadeusz_slownik.keys():
-            pan_tadeusz_slownik[slowo] += 1
-        else:
-            pan_tadeusz_slownik[slowo] = 1
 
-for k,v in pan_tadeusz_slownik.items():
-    if v > 50:
-        print(f"{k}: {v:3d}")
+# Funkcje
+
+# def nazwa_funkcji():
+#     print("jestem w Funkcji")
+#
+#     print("kończę funkcję")
+#
+#
+# print("jestem przed wywołaniem funkcji")
+# nazwa_funkcji()
+# nazwa_funkcji()
+# print("jestem po wywołaniu funkcji")
+
+# param = "tu jestem przed funkcją"
+#
+#
+# def funkcja_z_parametrem(param_a):
+#     print(f"Podałeś parametry: '{param}' '{param_a}'")
+#     param_a = 9999
+#     print(f"Podałeś parametry: '{param}' '{param_a}'")
+#
+#
+# funkcja_z_parametrem(123)
+# # print(param_a)
+
+
+# def dodaj(lista, liczba):
+#     lista.append(liczba)
+#
+#     return lista
+#
+#
+# lista_globalna = dodaj([], 1)
+# print(lista_globalna)
+#
+# print(dodaj([], 2))
+#
+# print(dodaj(lista_globalna, 3))
+#
+
+
+
+# ZADANIE 39
+# Napisz funkcję, która jako parametry przyjmie wzrot w centymerach i wagę w kg, policzy wskaźnik BMI i zwróci jego wartość.
+# Wyświetl zwróconą wartość na konsoli.
