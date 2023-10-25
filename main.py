@@ -95,3 +95,14 @@
 #
 # print("róznica b i a")
 # print(zbior_b.difference(zbior_a))
+
+
+# s = ", ".join( {"1", "4", "2", "3"} )
+# print(s)
+
+
+#### ZADANIE 32
+
+# Przygotuj dwa zbiory 20 losowych liczb z zakresu 1-20.
+# Wypisz wszystkie liczby z obu zbiorów, korzystając z metody .join()
+# Przygotuj część wspólną obu zbiorów i też ją wypisz.
