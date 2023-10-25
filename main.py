@@ -520,3 +520,9 @@
 # Napisz funkcję która zwróci pod postacią listy krotek zawartość pliku, którego nazwę przekażemy przez pierwszy argument
 # funkcji. Plik ma być otwarty z kodowaniem podanym jako drugi argument funkcji. Jeśli kodowanie nie zostanie podane
 # ma przyjąć kodowanie utf-8. Trzecim parametrem jest separator, domyślnie średnik.
+
+
+def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tuple]:
+    return [ tuple(line.strip().split(sep))
+             for line in open(file_name, 'r', encoding=enc)
+             if len(line.strip()) > 0 ]
