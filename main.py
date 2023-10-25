@@ -58,3 +58,40 @@
 # file_content = [f"{line.strip()}\n" for line in open(input_file, 'r', encoding='utf-8') if len(line) > 1]
 # with open(output_file, 'w', encoding='utf-8') as f:
 #     f.writelines(file_content)
+
+# lista = [1, 3, 1, 2, 2, 3]
+# print("lista:")
+# for el in lista:
+#     print(el)
+# # zbior = [1, 2, 3]
+# print("zbior:")
+# zbior = set(lista)
+# for el in zbior:
+#     print(el)
+
+# zbior_a = { 1, 1, 2, 3, 4}
+# print("przed dodaniem")
+# for el in zbior_a:
+#     print(el)
+# zbior_b = {3, 4, 5, 6, 7}
+#
+# zbior_a.add(5)
+# print("po dodaniu")
+# for el in zbior_a:
+#      print(el)
+
+
+# zbior_a = { 2, 3, 4, 1, 1, 'aefaf', '5'}
+# zbior_b = {3, 4, 5, 6, 7}
+#
+# print("część wspólna a i b")
+# print(zbior_a.intersection(zbior_b))
+#
+# print("suma a i b")
+# print(zbior_a.union(zbior_b))
+#
+# print("róznica a i b")
+# print(zbior_a.difference(zbior_b))
+#
+# print("róznica b i a")
+# print(zbior_b.difference(zbior_a))
