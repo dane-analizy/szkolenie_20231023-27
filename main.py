@@ -405,5 +405,11 @@ for v in people.values():
     else:
         cities[v.get('city')] = 1
 
-for city,count in sorted(cities.items(), key=lambda dd: dd[1], reverse=True):
+sorted_cities = sorted(cities.items(), key=lambda dd: dd[1], reverse=True)
+
+# filtrowanie listy - na podstawie funkcji pozostaną tylko spełniające ją elementy
+sorted_cities_filtered = list(filter(lambda k: k[1] > 60, sorted_cities))
+
+for city,count in sorted_cities_filtered:
     print(f"{city:<40}: {count:3d}")
+
