@@ -44,6 +44,7 @@
 # Napisz program, który przeczyta wiersz po wierszu plik "dane_2.csv" i przepisze go do pliku "dane_oczyszczone.csv"
 # tak, aby pominąć puste linie i usunąć zbędne białe znaki z początków i końców linii.
 
+# rozwiązanie zadania 31
 # input_file = "dane_2.csv"
 # output_file = "dane_oczyszczone.csv"
 # file_content = [line.strip() for line in open(input_file, 'r', encoding='utf-8') if len(line) > 1]
@@ -51,9 +52,9 @@
 # f.writelines([f"{l}\n" for l in file_content])
 # f.close()
 
-
-input_file = "dane_2.csv"
-output_file = "dane_oczyszczone.csv"
-file_content = [line.strip() for line in open(input_file, 'r', encoding='utf-8') if len(line) > 1]
-with open(output_file, 'w', encoding='utf-8') as f:
-    f.writelines([f"{l}\n" for l in file_content])
+# inna wersja
+# input_file = "dane_2.csv"
+# output_file = "dane_oczyszczone.csv"
+# file_content = [f"{line.strip()}\n" for line in open(input_file, 'r', encoding='utf-8') if len(line) > 1]
+# with open(output_file, 'w', encoding='utf-8') as f:
+#     f.writelines(file_content)
