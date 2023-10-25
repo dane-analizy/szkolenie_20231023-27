@@ -171,3 +171,35 @@ import random
 #         break
 # end_time = time.time()
 # print(f"Losowano {liczba_losowan} razy i zajęło to {end_time-start_time} sekund")
+
+
+# importowanie funkcji z zewnętrznych pakietów
+# pakiet.modul.funkcja()
+#
+# from pakiet import modul
+# modul.funkcja()
+#
+# from pakiet import funkcja
+# funkcja()
+#
+# from pakiet.modul import funkcja
+# funkcja()
+#
+# import time
+# time.time()
+# time.sleep()
+# time.mktime()
+
+
+from faker import Faker
+fake = Faker('pl-PL')
+print(fake.first_name())
+print(fake.last_name())
+print(fake.phone_number())
+print(fake.street_name())
+print(fake.city())
+
+###### ZADANIE 34
+
+# Wygeneruj 10 tysięcy fałszywych "osób" za pomocą pakietu Faker i zapisz je do pliku osoby.csv
+# Na osobę składa się: imię, nazwisko, ulica, numer domu, miasto, numer telefonu, wiek z przedziału 18-80 lat
