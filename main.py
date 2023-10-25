@@ -154,3 +154,20 @@ import random
 # for el1, el2 in zip(lista1, lista2):
 #     if el1 != el2:
 #         break
+
+# import random
+# import time
+#
+# moje_liczby = {1, 2, 3, 4, 5}
+# liczba_losowan = 0
+#
+# start_time = time.time()
+#
+# while True:
+#     liczba_losowan += 1
+#     lotto = set(random.sample(range(1, 50), 5))
+#     print(f"Losowanie: {liczba_losowan:6d} - {' '.join(map(str, lotto))}")
+#     if moje_liczby == lotto:
+#         break
+# end_time = time.time()
+# print(f"Losowano {liczba_losowan} razy i zajęło to {end_time-start_time} sekund")
