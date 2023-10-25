@@ -191,15 +191,29 @@ import random
 # time.mktime()
 
 
-from faker import Faker
-fake = Faker('pl-PL')
-print(fake.first_name())
-print(fake.last_name())
-print(fake.phone_number())
-print(fake.street_name())
-print(fake.city())
+# from faker import Faker
+# fake = Faker('pl-PL')
+# print(fake.first_name())
+# print(fake.last_name())
+# print(fake.phone_number())
+# print(fake.street_name())
+# print(fake.city())
 
 ###### ZADANIE 34
 
 # Wygeneruj 10 tysięcy fałszywych "osób" za pomocą pakietu Faker i zapisz je do pliku osoby.csv
 # Na osobę składa się: imię, nazwisko, ulica, numer domu, miasto, numer telefonu, wiek z przedziału 18-80 lat
+
+import random
+from faker import Faker
+fake = Faker('pl-PL')
+file_name = "osoby.csv"
+l_osob = 10000
+sep= ','
+
+with open(file_name, 'w', encoding='utf-8') as f:
+    f.write(f"imię,nazwisko,ulica,numer_domu,miasto,numer_telefonu,wiek\n")
+    for _ in range(l_osob):
+        f.write(f"{fake.first_name()}{sep}{fake.last_name()}{sep}{fake.street_name()}"
+                f"{sep}{random.randint(1, 159)}{sep}{fake.city()}{sep}{fake.phone_number()}{sep}{random.randint(18, 80)}\n")
+
