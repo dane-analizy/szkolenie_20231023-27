@@ -106,3 +106,37 @@
 # Przygotuj dwa zbiory 20 losowych liczb z zakresu 1-20.
 # Wypisz wszystkie liczby z obu zbiorów, korzystając z metody .join()
 # Przygotuj część wspólną obu zbiorów i też ją wypisz.
+
+# zbior = { i for i in range(10) }
+
+
+# import random
+# # zbior1 = random.sample(range(1, 21), 20)
+# # zbior2 = random.sample(range(1, 21), 20)
+#
+# zbior1 = { random.randint(1,20) for _ in range(20) }
+# zbior2 = { random.randint(1,20) for _ in range(20) }
+#
+# print("zbior 1: " + ', '.join(map(str, zbior1)))
+# print("zbior 2: " + ', '.join(map(str, zbior2)))
+#
+# czesc_wspolna = list(zbior1.intersection(zbior2))
+# czesc_wspolna = list(set(zbior1) & set(zbior2))
+#
+# print("czesc_wspolna: " + ', '.join(map(str, czesc_wspolna)))
+
+# lista = [ 1, 2, 3]
+# def f(x):
+#     return x*2
+#
+# # map(f, lista)
+# print(list(map(f, lista)))
+#
+# wynik = [ f(el) for el in lista ]
+#
+
+#### ZADANIE 33
+
+# Przygotuj program który, policzy ile jest potrzrbnych losowań aby ze zbioru liczb 1-49 wylosować 6 konkretnych,
+# podanych przez użytkownika
+# moje_liczby = { 1, 2, 3, 4, 5, 6 }
