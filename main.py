@@ -232,8 +232,13 @@ import random
 # for k in d:
 #     print(k)
 #
+# same klucze
 # print(d.keys())
 #
+# same wartosci
+# print(d.values())
+#
+# klucze i wartości
 # print(d.items())
 
 # for k,v in d.items():
@@ -252,19 +257,72 @@ import random
 #
 # print(d['klucz_aaaa'])
 
-d = {
-    1: 123,
-    2: 567,
-    'a': 'abdf',
-    (1, 'a'): [ 1, 2, 2]
-}
-
-
-for k,v in d.items():
-    print(f"Klucz = {k}, wartość dla klucza = {v}")
-    print(f"d['{k}'] = '{v}'")
+# d = {
+#     1: 123,
+#     2: 567,
+#     'a': 'abdf',
+#     (1, 'a'): [ 1, 2, 2]
+# }
+#
+#
+# for k,v in d.items():
+#     print(f"Klucz = {k}, wartość dla klucza = {v}")
+#     print(f"d['{k}'] = '{v}'")
 
 ##### ZADANIE 35
 # Utwórz pusty słownik d. Dodaj do niego 10 elementów - kluczem jest kolejna liczba w postaci stringu,
 # a wartością dla klucza jest liczba losowa.
 # Wpisz cały słownik
+
+
+# rozwiązanie A
+# import random
+# d = {}
+# ile_razy = 10
+# for i in range(ile_razy):
+#     d[str(i)] = random.randint(1, 20)
+# print(d)
+#
+# for k,v in d.items():
+#     print(f"Klucz = {k}, wartość dla klucza = {v}")
+
+# rozwiązanie B
+# import random
+# ile_razy = 10
+# d = { str(i):random.randint(1, 20) for i in range(ile_razy) }
+# print(d)
+
+
+# import random
+# ile_razy = 10
+# d = { str(i):random.randint(1, 20) for i in range(ile_razy) if i % 2 }
+# print(d)
+
+# zagnieżdzone słowniki w słownikach, listy słowników itd
+d = {
+    'a': 1,
+    'b': 'abc',
+    'c': {
+        'd_a': 69,
+        'c': 'klucz b drugi raz'
+    },
+    'items': [
+        {'al': 1, 'bl': 2, 'b': 'cos'},
+        {'al': 2, 'bl': 3, 'b': 125}
+    ],
+    'krotka': (1, 2, 3)
+}
+
+# print(d)
+
+for k,v in d.items():
+    print(f"Klucz = {k}, wartość jest typu {type(v)} i jest równa: {v}")
+    if isinstance(v, dict):
+        print("podsłownik")
+        for kk, vv in v.items():
+            print(f"\tKlucz = {kk}, wartość jest typu {type(vv)} i jest równa: {vv}")
+    if isinstance(v, list):
+        print("lista")
+        for i_el, el in enumerate(v):
+            print(f"\t{i_el} = {el}")
+
