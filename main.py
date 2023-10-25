@@ -491,8 +491,26 @@
 # Wyświetl zwróconą wartość na konsoli.
 # BMI = masa / wzrost ^ 2
 
-def bmi(waga, wzrost):
-    return waga/((wzrost/100)**2)
+# def bmi(waga: float, wzrost: float) -> float:
+#     """Funkcja wylicza wskaźnik BMI.
+#     Ma zastosowanie w różnych sytuacjach.
+#
+#
+#     Bardzo fajna funkcja.
+#
+#     :param waga: masa ciała w kiliogramach
+#     :param wzrost: wzrost w centymetrach
+#     :return: wskaźnik BMI
+#     """
+#     return waga/((wzrost/100)**2)
+#
+#
+# print(bmi(90,190))
+#
 
-
-print(bmi(90,190))
+# wartość domyślna parametru
+# def dodaj(liczba_a, liczba_b = 10):
+#     return liczba_a + liczba_b
+#
+# print(dodaj(1, 2))
+# print(dodaj(33))
