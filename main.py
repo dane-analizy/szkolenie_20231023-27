@@ -489,3 +489,4 @@
 # ZADANIE 39
 # Napisz funkcję, która jako parametry przyjmie wzrot w centymerach i wagę w kg, policzy wskaźnik BMI i zwróci jego wartość.
 # Wyświetl zwróconą wartość na konsoli.
+# BMI = masa / wzrost ^ 2
