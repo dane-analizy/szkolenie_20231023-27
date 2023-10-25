@@ -360,3 +360,8 @@ for id, line in enumerate(open(input_file, 'r', encoding='utf-8')):
     people[id] = person_dict
 
 print(people[1410])
+
+
+### ZADANIE 37
+# Jako ciąg dalszy zadania 36 - policz w którym mieście mieszka najwięcej osób.
+# Listę zaprezentuj w kolejności od największej liczby mieszkańców
