@@ -269,6 +269,8 @@
 #     print(f"Klucz = {k}, wartość dla klucza = {v}")
 #     print(f"d['{k}'] = '{v}'")
 
+
+
 ##### ZADANIE 35
 # Utwórz pusty słownik d. Dodaj do niego 10 elementów - kluczem jest kolejna liczba w postaci stringu,
 # a wartością dla klucza jest liczba losowa.
@@ -299,30 +301,44 @@
 # print(d)
 
 # zagnieżdzone słowniki w słownikach, listy słowników itd
-d = {
-    'a': 1,
-    'b': 'abc',
-    'c': {
-        'd_a': 69,
-        'c': 'klucz b drugi raz'
-    },
-    'items': [
-        {'al': 1, 'bl': 2, 'b': 'cos'},
-        {'al': 2, 'bl': 3, 'b': 125}
-    ],
-    'krotka': (1, 2, 3)
+# d = {
+#     'a': 1,
+#     'b': 'abc',
+#     'c': {
+#         'd_a': 69,
+#         'c': 'klucz b drugi raz'
+#     },
+#     'items': [
+#         {'al': 1, 'bl': 2, 'b': 'cos'},
+#         {'al': 2, 'bl': 3, 'b': 125}
+#     ],
+#     'krotka': (1, 2, 3)
+# }
+#
+# # print(d)
+#
+# for k,v in d.items():
+#     print(f"Klucz = {k}, wartość jest typu {type(v)} i jest równa: {v}")
+#     if isinstance(v, dict):
+#         print("podsłownik")
+#         for kk, vv in v.items():
+#             print(f"\tKlucz = {kk}, wartość jest typu {type(vv)} i jest równa: {vv}")
+#     if isinstance(v, list):
+#         print("lista")
+#         for i_el, el in enumerate(v):
+#             print(f"\t{i_el} = {el}")
+
+
+
+
+### ZADANIE 36
+
+# Użyj danych z zadania tworzącego 10 tysięcy fałszywych "osób" (plik osoby.csv).
+# Wczytaj te dane do listy słowników. Niech każda z osób ma swój kolejny numer (nadany w ramach generowania listy)
+# i niech będzie to klucz w słowniku.
+# Dla przypomnienia: na osobę składa się: imię, nazwisko, ulica, numer domu, miasto, numer telefonu, wiek z przedziału 18-80 lat.
+
+ludzie = {
+    1: {imie, nazwisko},
+    2: {imie, nazwisko}
 }
-
-# print(d)
-
-for k,v in d.items():
-    print(f"Klucz = {k}, wartość jest typu {type(v)} i jest równa: {v}")
-    if isinstance(v, dict):
-        print("podsłownik")
-        for kk, vv in v.items():
-            print(f"\tKlucz = {kk}, wartość jest typu {type(vv)} i jest równa: {vv}")
-    if isinstance(v, list):
-        print("lista")
-        for i_el, el in enumerate(v):
-            print(f"\t{i_el} = {el}")
-
