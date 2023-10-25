@@ -413,3 +413,11 @@ sorted_cities_filtered = list(filter(lambda k: k[1] > 60, sorted_cities))
 for city,count in sorted_cities_filtered:
     print(f"{city:<40}: {count:3d}")
 
+
+
+
+##### ZADANIE 38
+
+# Policz ile razy występują poszczególne słowa w tekście "Pana Tadeusza".
+# Użyj słowników - kluczem niech będzie słowo zapisane małymi literami, a wartością - liczba jego wystąpień.
+
