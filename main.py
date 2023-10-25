@@ -572,3 +572,6 @@
 # lista = get_file_content('dane.csv')
 # save_to_file(lista, 'dane_przepisane_ver_4.csv', sep='+=+')
 # print(nazwa_pliku)
+
+from obliczenia import bmi
+print(bmi(80, 185))
