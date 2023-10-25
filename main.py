@@ -522,12 +522,17 @@
 # ma przyjąć kodowanie utf-8. Trzecim parametrem jest separator, domyślnie średnik.
 
 
-def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tuple]:
-    return [ tuple(line.strip().split(sep))
-             for line in open(file_name, 'r', encoding=enc)
-             if len(line.strip()) > 0 ]
-
-
+# def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tuple]:
+#     return [ tuple(line.strip().split(sep))
+#              for line in open(file_name, 'r', encoding=enc)
+#              if len(line.strip()) > 0 ]
+#
+#
+# def save_to_file(lista: list[tuple], file_name: str, enc: str='utf-8', sep: str=';'):
+#     with open(file_name, 'w', encoding=enc) as f:
+#         for t in lista:
+#             linia = sep.join(t)+'\n'
+#             f.write(linia)
 
 # print(get_file_content('dane.csv', sep=','))
 # print(get_file_content('osoby.csv', sep=',')[:10])
@@ -537,6 +542,17 @@ def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tup
 # Użyj funkcji get_file_content() (przygotowanej w poprzednim zadaniu) do wczytania danych z pliku
 # i wyświetlenia ich linia po linii
 
-l = get_file_content('dane.csv')
-for i in l:
-    print( ', '.join(i))
+# l = get_file_content('dane.csv')
+# # for i in l:
+# #     print( ', '.join(i))
+# #
+# save_to_file(l, 'dane_przepisane.csv', sep='|')
+
+
+# moduły
+# funkcja get_file_content oraz save_to_file zostały przeniesione do pliku file_op.py
+
+from file_op import get_file_content, save_to_file
+
+lista = get_file_content('dane.csv')
+save_to_file(lista, 'dane_przepisane_ver_2.csv', sep=':')
