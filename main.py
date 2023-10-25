@@ -137,6 +137,20 @@
 
 #### ZADANIE 33
 
-# Przygotuj program który, policzy ile jest potrzrbnych losowań aby ze zbioru liczb 1-49 wylosować 6 konkretnych,
+# Przygotuj program który, policzy ile jest potrzebnych losowań aby ze zbioru liczb 1-49 wylosować 6 konkretnych,
 # podanych przez użytkownika
 # moje_liczby = { 1, 2, 3, 4, 5, 6 }
+
+import random
+
+# losowe 6 liczb z zakresu 1-48 (48, bo range nie domyka przedziału przy końcu!)
+# random.sample(range(1, 49), 6)
+
+# czy dwa zbiory są równe:
+# zbiór1 == zbiór2
+# zbior_a.intersection(zbior_b)
+
+# break = wyjście z pętli
+# for el1, el2 in zip(lista1, lista2):
+#     if el1 != el2:
+#         break
