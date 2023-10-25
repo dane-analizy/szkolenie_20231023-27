@@ -1,4 +1,3 @@
-
 # zapisywanie tekstu do pliku
 
 # context manager - konstrukcja with ...: - jeśli uda się otworzyć plik to wykonają się instrukcje
@@ -44,3 +43,5 @@
 
 # Napisz program, który przeczyta wiersz po wierszu plik "dane_2.csv" i przepisze go do pliku "dane_oczyszczone.csv"
 # tak, aby pominąć puste linie i usunąć zbędne białe znaki z początków i końców linii.
+
+
