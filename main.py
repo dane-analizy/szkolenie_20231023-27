@@ -73,3 +73,14 @@
 #### ZADANIE 42
 # Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
 
+# for i in range(-10, 10):
+#     print(f"{i}, {1/i}")
+
+#### ZADANIE 43
+# Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
+# Zrób tak, żeby program nie zatrzymywał się prz zerze.
+
+# for i in range(-10, 10):
+#     if i == 0:
+#         continue
+#     print(f"{i}, {1/i}")
