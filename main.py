@@ -361,12 +361,18 @@
 
 
 from tools.internet import get_json_from_url
-from tools.file_op import save_to_file
+from tools.file_op import save_to_file, save_to_file_from_dict
 
 dane = get_json_from_url("https://api.nbp.pl/api/exchangerates/tables/a/?format=json")[0]
 
+# lista krotek
 notowanie = []
 for waluta in dane.get('rates'):
     notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
+save_to_file(notowanie, 'notowanie_walut_krotki.csv', sep=';')
 
-save_to_file(notowanie, 'notowanie_walut.csv', sep=';')
+# lista słowników
+notowanie_w = []
+for waluta in dane.get('rates'):
+    notowanie_w.append( waluta )
+save_to_file_from_dict(notowanie_w, 'notowanie_walut_słownik.csv', sep=';')
