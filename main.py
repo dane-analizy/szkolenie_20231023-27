@@ -472,20 +472,42 @@
 # }
 #
 
-class Person:
-    first_name = "Jan"
-    last_name = "Kowalski"
-    city = "Warszawa"
-    age = 35
+# class Person:
+#     first_name = "Jan"
+#     last_name = "Kowalski"
+#     city = "Warszawa"
+#     age = 35
+#
+#     def print_me(self):
+#         print(f"Jestem {self.first_name} {self.last_name}. Mieszkam w {self.city} i mam {self.age} lat.")
+#
+# p1 = Person()
+# p1.print_me()
+#
+# p2 = Person()
+# p2.print_me()
+#
+# print(p1)
+# print(p2)
 
-    def print_me(self):
-        print(f"Jestem {self.first_name} {self.last_name}. Mieszkam w {self.city} i mam {self.age} lat.")
 
-p1 = Person()
-p1.print_me()
 
-p2 = Person()
-p2.print_me()
+# class Person:
+#     first_name = None
+#     last_name = None
+#     city = None
+#     age = None
+#
+#     def print_me(self):
+#         print(f"Jestem {self.first_name} {self.last_name}. Mieszkam w {self.city} i mam {self.age} lat.")
+#
+# p1 = Person()
+# p1.first_name = "Józek"
+# p1.last_name = "Nowak"
+# p1.print_me()
 
-print(p1)
-print(p2)
+
+### ZADANIE 50
+# Zdefiniuj klasę Car, która zawiera: model, markę i nr rejestracyjny.
+# W ramach klasy Car zdefiniuj metodę print_me().
+# Utwórz 2 różne obiekty klasy Car i wykonaj na nich metodę prtint_me()
