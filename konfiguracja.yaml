@@ -1,0 +1,9 @@
+db_name: baza_danych
+db_privileges:
+  - read
+  - create
+  - dump
+db_server: 127.0.0.1
+db_table: tabela_z_danymi
+login: login_do_bazy
+password: "has\u0142oDoBazy123!"

@@ -1,1 +1,1 @@
-{"login": "login_do_bazy", "password": "has\u0142oDoBazy123!", "db_server": "123.123.123.13", "db_name": "baza_danych", "db_table": "tabela_z_danymi", "db_privileges": ["read", "create", "dump"]}
+{"login": "login_do_bazy", "password": "has\u0142oDoBazy123!", "db_server": "127.0.0.1", "db_name": "baza_danych", "db_table": "tabela_z_danymi", "db_privileges": ["read", "create", "dump"]}
