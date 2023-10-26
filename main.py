@@ -68,3 +68,8 @@
 # import matematyka.dodawanie as dod
 # print(mn.pomnoz(5,4))
 # print(dod.dodaj(5,4))
+
+
+#### ZADANIE 42
+# Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
+
