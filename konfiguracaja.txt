@@ -1,0 +1,5 @@
+login_do_bazy
+123.123.123.13
+hasłoDoBazy123!
+baza_danych
+tabela_z_danymi

@@ -294,3 +294,17 @@
 # result = requests.get(url, auth=("login", "haslo"))
 
 # pokazać konfigurację w JSONie
+import json
+
+config = {
+    "login": "login_do_bazy",
+    "password": "hasłoDoBazy123!",
+    "db_server": "123.123.123.13",
+    "db_name": "baza_danych",
+    "db_table": "tabela_z_danymi",
+    "db_privileges": ['read', 'create', 'dump']
+}
+
+# zapisanie obiektu do JSONa
+with open("konfiguracja.json", 'w') as f:
+    json.dump(config, f)
