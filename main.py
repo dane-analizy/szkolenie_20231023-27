@@ -349,6 +349,6 @@
 #     yaml.dump(res_json, f)
 
 
-
-
-print(get_json_from_url('https://jsystems.pl/static/blog/python/dane.json'))
+# from tools.internet import  get_json_from_url
+#
+# print(get_json_from_url('https://jsystems.pl/static/blog/python/dane.json'))
