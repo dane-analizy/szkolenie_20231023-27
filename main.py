@@ -602,35 +602,120 @@
 # s1.print_me()
 
 
-class Samochod:
-    model = None
-    marka = None
-    nr_rejestracyjny = None
-    przebieg = 0
-
-    def __init__(self, model, marka, nr_rej):
-        self.model = model
-        self.marka = marka
-        self.nr_rejestracyjny = nr_rej
-
-    def print_me(self):
-        print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}. Na liczniku mam {self.przebieg} km.")
-
-    def przejedz(self, odleglosc):
-        self.przebieg += odleglosc
-
-    def get_przebieg(self):
-        return self.przebieg
-
-
-s1 = Samochod("Opel", "Omega", "DW8373737")
-s1.print_me()
-
-s1.przejedz(1000)
-s1.print_me()
-
-print(s1.get_przebieg())
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#     przebieg = 0
+#
+#     def __init__(self, model, marka, nr_rej):
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}. Na liczniku mam {self.przebieg} km.")
+#
+#     def przejedz(self, odleglosc):
+#         self.przebieg += odleglosc
+#
+#     def get_przebieg(self):
+#         return self.przebieg
+#
+#
+# s1 = Samochod("Opel", "Omega", "DW8373737")
+# s1.print_me()
+#
+# s1.przejedz(1000)
+# s1.print_me()
+#
+# print(s1.get_przebieg())
 
 
 ### ZADANIE 51
 # Do klasy Samochod dodaj metodę "zmien_wlasciciela" która zmieni numer rejestracyjny.
+
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#     przebieg = 0
+#
+#     def __init__(self, model, marka, nr_rej):
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}. Na liczniku mam {self.przebieg} km.")
+#
+#     def przejedz(self, odleglosc):
+#         self.przebieg += odleglosc
+#
+#     def zmien_wlasciciela(self, nowe_blachy):
+#         self.nr_rejestracyjny = nowe_blachy
+#
+#     def get_przebieg(self):
+#         return self.przebieg
+#
+#
+# s1 = Samochod("Opel", "Omega", "DW8373737")
+# s1.print_me()
+#
+# s1.zmien_wlasciciela("WJ 98765")
+# s1.print_me()
+#
+
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#     przebieg = 0
+#
+#     def __init__(self, model, marka, nr_rej):
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def __repr__(self):
+#         return f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}. Na liczniku mam {self.przebieg} km."
+#
+#     def przejedz(self, odleglosc):
+#         self.przebieg += odleglosc
+#
+#     def zmien_wlasciciela(self, nowe_blachy):
+#         self.nr_rejestracyjny = nowe_blachy
+#
+#     def get_przebieg(self):
+#         return self.przebieg
+#
+#
+# s1 = Samochod("Opel", "Omega", "DW8373737")
+# print(s1)
+
+
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#
+#     def __init__(self, model, marka, nr_rej):
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def __repr__(self):
+#         return f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}"
+#
+#
+# flota = [
+#     Samochod("Opel", "Omega", "DW 83737"),
+#     Samochod("Audi", "A6", "WA 12345"),
+#     Samochod("Ford", "Focus", "XD 12345")
+#     ]
+#
+# for auto in flota:
+#     print(auto)
