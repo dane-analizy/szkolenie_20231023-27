@@ -629,5 +629,8 @@ s1.print_me()
 s1.przejedz(1000)
 s1.print_me()
 
-
 print(s1.get_przebieg())
+
+
+### ZADANIE 51
+# Do klasy Samochod dodaj metodę "zmien_wlasciciela" która zmieni numer rejestracyjny.
