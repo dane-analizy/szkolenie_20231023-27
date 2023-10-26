@@ -558,21 +558,76 @@
 
 
 
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#
+#     def __init__(self, model, marka, nr_rej):
+#         print("jestem w konstruktorze")
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+#
+#
+# s1 = Samochod("Opel", "Omega", "DW8373737")
+# print("obiekt klasy utowrzony")
+# s1.print_me()
+
+
+
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#
+#     def __init__(self, model, marka, nr_rej):
+#         print("jestem w konstruktorze")
+#         self.model = model
+#         self.marka = marka
+#         self.nr_rejestracyjny = nr_rej
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+#
+#
+# s1 = Samochod("Opel", "Omega", "DW8373737")
+# s1.print_me()
+#
+# s1.nr_rejestracyjny = "WA 123456"
+# s1.print_me()
+
+
 class Samochod:
     model = None
     marka = None
     nr_rejestracyjny = None
+    przebieg = 0
 
     def __init__(self, model, marka, nr_rej):
-        print("jestem w konstruktorze")
         self.model = model
         self.marka = marka
         self.nr_rejestracyjny = nr_rej
 
     def print_me(self):
-        print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+        print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}. Na liczniku mam {self.przebieg} km.")
+
+    def przejedz(self, odleglosc):
+        self.przebieg += odleglosc
+
+    def get_przebieg(self):
+        return self.przebieg
 
 
 s1 = Samochod("Opel", "Omega", "DW8373737")
-print("obiekt klasy utowrzony")
 s1.print_me()
+
+s1.przejedz(1000)
+s1.print_me()
+
+
+print(s1.get_przebieg())
