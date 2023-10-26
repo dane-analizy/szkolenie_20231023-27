@@ -1,4 +1,4 @@
-db_name: baza_danych
+db_name: tajna baza danych
 db_privileges:
   - read
   - create
@@ -6,4 +6,4 @@ db_privileges:
 db_server: 127.0.0.1
 db_table: tabela_z_danymi
 login: login_do_bazy
-password: "has\u0142oDoBazy123!"
+password: \"ąłasfagasg5252źć"

@@ -322,3 +322,13 @@
 #
 # with open("konfiguracja.yaml", 'w') as f:
 #     yaml.dump(config, f)
+
+
+# import yaml # pip install pyyaml
+#
+# # wczytanie obiektu z pliku YAML
+# with open("konfiguracja.yaml", 'r', encoding='utf-8') as f:
+#     config = yaml.safe_load(f)
+#
+# print("wczytany konfig:")
+# print(config)
