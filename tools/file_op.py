@@ -7,5 +7,5 @@ def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tup
 def save_to_file(lista: list[tuple], file_name: str, enc: str='utf-8', sep: str=';'):
     with open(file_name, 'w', encoding=enc) as f:
         for t in lista:
-            linia = sep.join(t)+'\n'
+            linia = sep.join([str(tt) for tt in t])+'\n'
             f.write(linia)

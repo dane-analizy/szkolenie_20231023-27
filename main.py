@@ -192,7 +192,7 @@
 
 
 #### ZADANIE 46
-# Korzystając z przygotowany wczesniej funkcji i modułów wczytaj dane z pliku dane_zepsute.csv.
+# Korzystając z przygotowany wcześniej funkcji i modułów wczytaj dane z pliku dane_zepsute.csv.
 # Dla każdej z osób policz wartość BMI.
 # Wyniki zapisz do nowego pliku.
 # Jeśli przy liczeniu BMI napotkasz błąd - zapisz to też w pliku wyjściowym (typ błędu)
@@ -203,4 +203,28 @@
 #     print(e.__class__.__name__)
 
 
-from
+from tools.obliczenia import str_to_float, bmi
+from tools.file_op import get_file_content, save_to_file
+
+file_content_input = get_file_content('dane_zepsute.csv')
+file_content_output = []
+
+for line in file_content_input:
+    first_name, last_name = line[0], line[1]
+    weight, error_w = str_to_float(line[2])
+    height, error_h = str_to_float(line[3])
+    if weight and height:
+        bmi_value = bmi(weight, height)
+    else:
+        bmi_value = 'blad'
+
+    file_content_output.append(
+        (
+            first_name, last_name,
+            weight, height,
+            bmi_value,
+            error_w, error_h
+        )
+    )
+
+save_to_file(file_content_output, 'dane_zepsute_wyjscie.csv')
