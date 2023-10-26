@@ -192,3 +192,12 @@
 
 
 #### ZADANIE 46
+# Korzystając z przygotowany wczesniej funkcji i modułów wczytaj dane z pliku dane_zepsute.csv.
+# Dla każdej z osób policz wartość BMI.
+# Wyniki zapisz do nowego pliku.
+# Jeśli przy liczeniu BMI napotkasz błąd - zapisz to też w pliku wyjściowym (typ błędu)
+
+# try:
+#     w = 1/0
+# except Exception as e:
+#     print(e.__class__.__name__)
