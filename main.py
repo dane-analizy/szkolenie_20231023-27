@@ -237,29 +237,55 @@
 # instalujemy pakiet requests
 # pip install requests
 
-import requests
-import json
+# import requests
+# import json
+#
+# url = "https://jsystems.pl/static/blog/python/dane.json"
+# # url = 'https://devszczepaniak.pl/wprowadzenie-do-rest-api/'
+#
+# result = requests.get(url)
+# # odpowiedź z serwera
+# print(result)
+#
+# # status odpowiedzi
+# # print(f"result.status_code={result.status_code}")
+# print(f"{result.status_code=}")
+# print('=' * 80)
+#
+# # zawartość odpowiedzi - zserializowane do tekstu
+# # print(f"{result.text=}")
+# print('=' * 80)
+#
+# # zawartość odpowiedzi - oryginał
+# # print(f"{result.content=}")
+#
+# res_json = result.json()
+# print(type(res_json))
+# for k,v in res_json.items():
+#     print(k,v)
 
-url = "https://jsystems.pl/static/blog/python/dane.json"
-# url = 'https://devszczepaniak.pl/wprowadzenie-do-rest-api/'
 
-result = requests.get(url)
-# odpowiedź z serwera
-print(result)
 
-# status odpowiedzi
-# print(f"result.status_code={result.status_code}")
-print(f"{result.status_code=}")
-print('=' * 80)
+# import requests
+# url = "https://gfwghowguhwog.wgwgwg"
+# try:
+#     result = requests.get(url)
+# except Exception as e:
+#     pass
+#
+# print(result)
+# print(f"{result.status_code=}")
 
-# zawartość odpowiedzi - zserializowane do tekstu
-# print(f"{result.text=}")
-print('=' * 80)
 
-# zawartość odpowiedzi - oryginał
-# print(f"{result.content=}")
+# import requests
+# url = "https://jsystems.pl/dupa"
+# try:
+#     result = requests.get(url)
+# except Exception as e:
+#     pass
+#
+# print(result)
+# print(f"{result.status_code=}")
 
-res_json = result.json()
-print(type(res_json))
-for k,v in res_json.items():
-    print(k,v)
+
+# pokazać konfigurację w JSONie
