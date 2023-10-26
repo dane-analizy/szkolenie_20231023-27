@@ -187,5 +187,5 @@ except Exception as e:
     print(str(e))
     print('=' * 70)
     print("Traceback błędu:")
-    print(e.with_traceback())
+    print(e.with_traceback(None))
     print('=' * 70)
