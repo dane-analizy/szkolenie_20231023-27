@@ -43,7 +43,6 @@
 # pd.read_excel()
 
 
-
 # from tools.file_op import get_file_content
 #
 # get_file_content()
@@ -140,7 +139,6 @@
 #         print(f"{el} - inny błąd", type(e), e)
 
 
-
 #### ZADANIE 45
 # Wypisz na konsoli wynik dzielenia 1 przez podaną przez użytkownika liczbę.
 # Zrób tak, żeby program nie zatrzymywał się jeśli użytkownik wpisze coś błędnego.
@@ -231,7 +229,6 @@
 # save_to_file(file_content_output, 'dane_zepsute_wyjscie.csv')
 
 
-
 # pobieranie danych z internetu
 
 # instalujemy pakiet requests
@@ -263,7 +260,6 @@
 # print(type(res_json))
 # for k,v in res_json.items():
 #     print(k,v)
-
 
 
 # import requests
@@ -406,7 +402,6 @@
 # print(wyniki)
 
 
-
 # nowalista = []
 #
 # for x in ...:
@@ -421,7 +416,6 @@
 # nowalista = [ funk(x) for x in ... if x > 10 ]
 #
 # { funk(x):funkb(x) for x in ... if x < 10 }
-
 
 
 # wczytanie danych z pliku excela
@@ -491,7 +485,6 @@
 # print(p2)
 
 
-
 # class Person:
 #     first_name = None
 #     last_name = None
@@ -557,7 +550,6 @@
 # s1.print_me()
 
 
-
 # class Samochod:
 #     model = None
 #     marka = None
@@ -576,8 +568,6 @@
 # s1 = Samochod("Opel", "Omega", "DW8373737")
 # print("obiekt klasy utowrzony")
 # s1.print_me()
-
-
 
 
 # class Samochod:
@@ -694,7 +684,6 @@
 #
 # s1 = Samochod("Opel", "Omega", "DW8373737")
 # print(s1)
-
 
 
 # class Samochod:
