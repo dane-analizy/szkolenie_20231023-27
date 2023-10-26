@@ -1,4 +1,6 @@
-def str_to_float(s):
+
+# def str_to_float(s):
+def str_to_float(s: str) -> tuple[float, str]:
     wynik = None
     error = ""
     try:
@@ -11,8 +13,6 @@ def str_to_float(s):
 def bmi(waga: float, wzrost: float) -> float:
     """Funkcja wylicza wskaźnik BMI.
     Ma zastosowanie w różnych sytuacjach.
-
-
     Bardzo fajna funkcja.
 
     :param waga: masa ciała w kiliogramach

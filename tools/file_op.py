@@ -4,7 +4,7 @@ def get_file_content(file_name: str, enc: str='utf-8', sep: str=';') -> list[tup
              if len(line.strip()) > 0 ]
 
 
-def save_to_file(lista: list[tuple], file_name: str, enc: str='utf-8', sep: str=';'):
+def save_to_file(lista: list[tuple], file_name: str, enc: str = 'utf-8', sep: str = ';') -> None:
     with open(file_name, 'w', encoding=enc) as f:
         for t in lista:
             linia = sep.join([str(tt) for tt in t])+'\n'
