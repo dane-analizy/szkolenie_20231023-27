@@ -352,3 +352,9 @@
 # from tools.internet import  get_json_from_url
 #
 # print(get_json_from_url('https://jsystems.pl/static/blog/python/dane.json'))
+
+
+#### ZADANIE 48
+# Korzystają z API NBP (endpoint https://api.nbp.pl/api/exchangerates/tables/a/?format=json) pobierz tablicę
+# z aktualnymi notowaniami walut i zapisz je do pliku waluty.csv, w formacie:
+# symbol waluty ; nazwa waluty ; kurs
