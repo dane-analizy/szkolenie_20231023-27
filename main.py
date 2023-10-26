@@ -56,3 +56,9 @@
 #
 # from tools import file_op
 # file_op.save_to_file()
+
+
+#### ZADANIE 41
+# Zbuduj pakiet "matematyka" z dwoma modułami: mnozenie i dodawanie. W mnozeniu niech będzie funkcja pomnoz(a, b),
+# a w dodawaniu funkcja dodaj(a, b).
+# Napisz też kod, który importuje te funkcje i ich używa.
