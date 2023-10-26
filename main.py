@@ -289,8 +289,8 @@
 
 # autoryzacja do api
 # dokumentacja https://requests.readthedocs.io/en/latest/user/authentication/
-import requests
-url = "https://jsystems.pl/dupa"
-result = requests.get(url, auth=("login", "haslo"))
+# import requests
+# url = "https://jsystems.pl/dupa"
+# result = requests.get(url, auth=("login", "haslo"))
 
 # pokazać konfigurację w JSONie
