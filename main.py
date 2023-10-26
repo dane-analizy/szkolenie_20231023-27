@@ -215,6 +215,7 @@ for line in file_content_input:
     height, error_h = str_to_float(line[3])
     if weight and height:
         bmi_value = bmi(weight, height)
+        # error_w, error_h = "", ""
     else:
         bmi_value = 'blad'
 

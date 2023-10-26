@@ -1,6 +1,6 @@
 def str_to_float(s):
     wynik = None
-    error = None
+    error = ""
     try:
         wynik = float(s)
     except Exception as e:
