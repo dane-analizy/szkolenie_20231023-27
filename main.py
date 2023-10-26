@@ -41,3 +41,18 @@
 #     print("mój czytacz excela")
 #
 # pd.read_excel()
+
+
+
+# from tools.file_op import get_file_content
+#
+# get_file_content()
+
+# from tools import file_op
+# file_op.save_to_file()
+
+# import tools
+# print(tools.version)
+#
+# from tools import file_op
+# file_op.save_to_file()
