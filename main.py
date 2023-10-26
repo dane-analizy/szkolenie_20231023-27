@@ -360,20 +360,25 @@
 # symbol waluty ; nazwa waluty ; kurs
 
 
-from tools.internet import get_json_from_url
-from tools.file_op import save_to_file, save_to_file_from_dict
+# from tools.internet import get_json_from_url
+# from tools.file_op import save_to_file, save_to_file_from_dict
+#
+# dane = get_json_from_url("https://api.nbp.pl/api/exchangerates/tables/a/?format=json")[0]
+#
+# # lista krotek
+# notowanie = []
+# for waluta in dane.get('rates'):
+#     notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
+#
+# # lista krotek - list complrehention style
+# # notowanie = [(waluta.get('code'), waluta.get('currency'), waluta.get('mid')) for waluta in dane.get('rates')]
+# save_to_file(notowanie, 'notowanie_walut_krotki.csv', sep=';')
+#
+# # lista słowników
+# notowanie_w = [ waluta for waluta in dane.get('rates')]
+# save_to_file_from_dict(notowanie_w, 'notowanie_walut_słownik.csv', sep=';')
 
-dane = get_json_from_url("https://api.nbp.pl/api/exchangerates/tables/a/?format=json")[0]
 
-# lista krotek
-notowanie = []
-for waluta in dane.get('rates'):
-    notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
-
-# lista krotek - list complrehention style
-# notowanie = [(waluta.get('code'), waluta.get('currency'), waluta.get('mid')) for waluta in dane.get('rates')]
-save_to_file(notowanie, 'notowanie_walut_krotki.csv', sep=';')
-
-# lista słowników
-notowanie_w = [ waluta for waluta in dane.get('rates')]
-save_to_file_from_dict(notowanie_w, 'notowanie_walut_słownik.csv', sep=';')
+#### ZADANIE 49
+# Korzystają z API NBP (endpoint https://api.nbp.pl/api/exchangerates/rates/a/usd/2023-01-01/2023-10-26/?format=json)
+# pobierz tablicę z historycznymi notowaniami USD i wypisz dni, w krótych dolar kosztował mniej niż 4 zł.
