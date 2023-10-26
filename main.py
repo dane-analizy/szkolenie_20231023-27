@@ -62,3 +62,9 @@
 # Zbuduj pakiet "matematyka" z dwoma modułami: mnozenie i dodawanie. W mnozeniu niech będzie funkcja pomnoz(a, b),
 # a w dodawaniu funkcja dodaj(a, b).
 # Napisz też kod, który importuje te funkcje i ich używa.
+
+# powstał folder "matematyka" razem ze wszystkimi plikami w nim zawartymi
+# import matematyka.mnozenie as mn
+# import matematyka.dodawanie as dod
+# print(mn.pomnoz(5,4))
+# print(dod.dodaj(5,4))
