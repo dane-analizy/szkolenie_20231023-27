@@ -203,29 +203,63 @@
 #     print(e.__class__.__name__)
 
 
-from tools.obliczenia import str_to_float, bmi
-from tools.file_op import get_file_content, save_to_file
+# from tools.obliczenia import str_to_float, bmi
+# from tools.file_op import get_file_content, save_to_file
+#
+# file_content_input = get_file_content('dane_zepsute.csv')
+# file_content_output = []
+#
+# for line in file_content_input:
+#     first_name, last_name = line[0], line[1]
+#     weight, error_w = str_to_float(line[2])
+#     height, error_h = str_to_float(line[3])
+#     if weight and height:
+#         bmi_value = bmi(weight, height)
+#         # error_w, error_h = "", ""
+#     else:
+#         bmi_value = 'blad'
+#
+#     file_content_output.append(
+#         (
+#             first_name, last_name,
+#             weight, height,
+#             bmi_value,
+#             error_w, error_h
+#         )
+#     )
+#
+# save_to_file(file_content_output, 'dane_zepsute_wyjscie.csv')
 
-file_content_input = get_file_content('dane_zepsute.csv')
-file_content_output = []
 
-for line in file_content_input:
-    first_name, last_name = line[0], line[1]
-    weight, error_w = str_to_float(line[2])
-    height, error_h = str_to_float(line[3])
-    if weight and height:
-        bmi_value = bmi(weight, height)
-        # error_w, error_h = "", ""
-    else:
-        bmi_value = 'blad'
 
-    file_content_output.append(
-        (
-            first_name, last_name,
-            weight, height,
-            bmi_value,
-            error_w, error_h
-        )
-    )
+# pobieranie danych z internetu
 
-save_to_file(file_content_output, 'dane_zepsute_wyjscie.csv')
+# instalujemy pakiet requests
+# pip install requests
+
+import requests
+import json
+
+url = "https://jsystems.pl/static/blog/python/dane.json"
+# url = 'https://devszczepaniak.pl/wprowadzenie-do-rest-api/'
+
+result = requests.get(url)
+# odpowiedź z serwera
+print(result)
+
+# status odpowiedzi
+# print(f"result.status_code={result.status_code}")
+print(f"{result.status_code=}")
+print('=' * 80)
+
+# zawartość odpowiedzi - zserializowane do tekstu
+# print(f"{result.text=}")
+print('=' * 80)
+
+# zawartość odpowiedzi - oryginał
+# print(f"{result.content=}")
+
+res_json = result.json()
+print(type(res_json))
+for k,v in res_json.items():
+    print(k,v)
