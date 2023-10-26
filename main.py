@@ -84,3 +84,22 @@
 #     if i == 0:
 #         continue
 #     print(f"{i}, {1/i}")
+
+# liczba = input("Podaj liczbę: ")
+# liczba = float(liczba)
+# print(liczba**2)
+
+# złapanie błędu
+# print("początek programu")
+# liczba = 0
+# try:
+#     wynik = 1 / liczba
+#     print(wynik)
+# except:
+#     print("Wystąpił błąd")
+# print("koniec programu")
+
+
+#### ZADANIE 44
+# Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
+# Zrób tak, żeby program nie zatrzymywał się przy zerze wykorzystując konstrukcję try-except
