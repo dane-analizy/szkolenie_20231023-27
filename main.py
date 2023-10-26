@@ -287,5 +287,10 @@
 # print(result)
 # print(f"{result.status_code=}")
 
+# autoryzacja do api
+# dokumentacja https://requests.readthedocs.io/en/latest/user/authentication/
+import requests
+url = "https://jsystems.pl/dupa"
+result = requests.get(url, auth=("login", "haslo"))
 
 # pokazać konfigurację w JSONie
