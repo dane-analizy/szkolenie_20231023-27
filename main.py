@@ -103,3 +103,46 @@
 #### ZADANIE 44
 # Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
 # Zrób tak, żeby program nie zatrzymywał się przy zerze wykorzystując konstrukcję try-except
+
+# rozwiązanie
+# for i in range(-10, 10):
+#     try:
+#         print(f"{i}, {1/i}")
+#     except:
+#         print("Pamiętaj nie dziel przez zero!")
+#
+
+# dzielenie w funkcji obsługującej błąd
+# def podziel(a, b):
+#     """Funkcja dzieli liczbę a przez b i zwraca wynik. Jeśli napotka błąd - wyświetla komunikat i zwraca None"""
+#     try:
+#         wynik = a/b
+#     except:
+#         print("Pamiętaj nie dziel przez zero!")
+#         wynik = None
+#     return wynik
+#
+#
+# for i in range(-10, 10):
+#     w = podziel(1, i)
+#     if w:
+#         print(w)
+
+# lista = [-2, -1, 0, 1, 'ala ma kota', 3, 5, (12, 13)]
+# for el in lista:
+#     try:
+#         print(f"{el}, {1/el}")
+#     except ZeroDivisionError:
+#         print(f"{el} - Pamiętaj nie dziel przez zero!")
+#     except TypeError:
+#         print(f"{el} - Nie umiem dzielić przez to coś!")
+#     except Exception as e:
+#         print(f"{el} - inny błąd", type(e), e)
+
+
+
+#### ZADANIE 44
+# Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
+# Zrób tak, żeby program nie zatrzymywał się przy zerze wykorzystując konstrukcję try-except
+
+
