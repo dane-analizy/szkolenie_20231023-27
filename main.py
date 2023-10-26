@@ -437,7 +437,7 @@
 # # lista słowników z tabeli:
 # dane_dict = dane.to_dict('records')
 # # print(dane_dict)
-# 
+#
 # # budujemy listę słowników
 # drogie_waluty = []
 # for waluta in dane_dict:
@@ -453,3 +453,39 @@
 # # zapis do pliku xls
 # dane_xls.to_excel("waluty_drogie.xlsx", index=False)
 
+# import pandas as pd
+#
+# # wczytanie danych z excela - plik waluty.xlsx, arkusz waluty
+# dane = pd.read_excel('waluty.xlsx', sheet_name='waluty')
+# print(dane)
+
+
+# programowanie obiektowe - klasy i metody
+# person_dict = {
+#     'first_name': person_data[0],
+#     'last_name': person_data[1],
+#     'street': person_data[2],
+#     'house_number': person_data[3],
+#     'city': person_data[4],
+#     'phone': person_data[5],
+#     'age': int(person_data[6])
+# }
+#
+
+class Person:
+    first_name = "Jan"
+    last_name = "Kowalski"
+    city = "Warszawa"
+    age = 35
+
+    def print_me(self):
+        print(f"Jestem {self.first_name} {self.last_name}. Mieszkam w {self.city} i mam {self.age} lat.")
+
+p1 = Person()
+p1.print_me()
+
+p2 = Person()
+p2.print_me()
+
+print(p1)
+print(p2)
