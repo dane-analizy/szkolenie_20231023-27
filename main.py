@@ -147,25 +147,35 @@
 # Przygotuj funkcję dzielącą, przygotuj funkcję rzutującą ciąg prowadzony przez użytkownika na float.
 # W przypadku błędów - wypisz odpowiednie komunikaty.
 
-def str_to_float(s):
-    wynik = None
-    try:
-        wynik = float(s)
-    except Exception as e:
-        print(f"To nie jest liczba (błąd: {e})")
-    return wynik
+# def str_to_float(s):
+#     wynik = None
+#     try:
+#         wynik = float(s)
+#     except Exception as e:
+#         print(f"To nie jest liczba (błąd: {e})")
+#     return wynik
+#
+# def podziel(liczba):
+#     wynik = None
+#     try:
+#         wynik = 1/liczba
+#     except Exception as e:
+#         print(f"Nie mogę tego podzielić (błąd: {e})")
+#     return wynik
+#
+#
+# liczba = input("Podaj liczbę: ")
+# liczba = str_to_float(liczba)
+# wynik = podziel(liczba)
+# if wynik:
+#     print(wynik)
 
-def podziel(liczba):
-    wynik = None
-    try:
-        wynik = 1/liczba
-    except Exception as e:
-        print(f"Nie mogę tego podzielić (błąd: {e})")
-    return wynik
 
-
-liczba = input("Podaj liczbę: ")
-liczba = str_to_float(liczba)
-wynik = podziel(liczba)
-if wynik:
-    print(wynik)
+# l = 1
+# try:
+#     w = 1/l
+#     print("policzone dzielenie")
+#     ww = 1/0
+#     print("policzone dzielenie przez zero")
+# except:
+#     print("błąd")
