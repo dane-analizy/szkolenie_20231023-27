@@ -337,13 +337,26 @@
 ### ZADANIE 47
 # Pobierz dane z API z adresu https://jsystems.pl/static/blog/python/dane.json i zapisz je jako plik 'dane.yaml' na dysku.
 
-import yaml
+# import yaml
+# import requests
+#
+# url = "https://jsystems.pl/static/blog/python/dane.json"
+# plik = 'dane.yaml'
+# result = requests.get(url)
+# res_json = result.json()
+#
+# with open(plik, 'w') as f:
+#     yaml.dump(res_json, f)
+
+from typing import Optional
 import requests
 
-url = "https://jsystems.pl/static/blog/python/dane.json"
-plik = 'dane.yaml'
-result = requests.get(url)
-res_json = result.json()
+def get_json_from_url(url: str) -> Optional[dict]:
+    result = requests.get(url)
+    if result.status_code == 200:
+        return result.json()
+    else:
+        return None
 
-with open(plik, 'w') as f:
-    yaml.dump(res_json, f)
+
+print(get_json_from_url('https://jsystems.pl/static/blog/python/dane.json'))
