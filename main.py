@@ -390,7 +390,34 @@
 # dane = get_json_from_url(url)
 #
 # wyniki = [(d.get('effectiveDate'), d.get('mid'))
-#           for d in dane.get('rates')
+#           for d in dane['rates']
 #           if d.get('mid') < 4]
-# 
-# print(wyniki)
+#
+
+# wyniki = [(d.get('effectiveDate'), d.get('mid')) for d in dane['rates'] if d.get('mid') < 4]
+
+# wyniki = []
+# for d in dane['rates']:
+#     if d.get('mid') < 4:
+#         wyniki.append(
+#             ( d.get('effectiveDate'), d.get('mid') )
+#         )
+
+print(wyniki)
+
+
+
+# nowalista = []
+#
+# for x in ...:
+#     if x > 10:
+#         nowalista.append( funk(x) )
+#
+# []
+# [1]
+# [1, 2]
+# [1, 2, 3]
+#
+# nowalista = [ funk(x) for x in ... if x > 10 ]
+#
+# { funk(x):funkb(x) for x in ... if x < 10 }
