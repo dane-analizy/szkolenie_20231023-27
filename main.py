@@ -511,3 +511,68 @@
 # Zdefiniuj klasę Car, która zawiera: model, markę i nr rejestracyjny.
 # W ramach klasy Car zdefiniuj metodę print_me().
 # Utwórz 2 różne obiekty klasy Car i wykonaj na nich metodę prtint_me()
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+#
+#
+# s1 = Samochod()
+# s1.model = "Omega"
+# s1.marka = "Opel"
+# s1.nr_rejestracyjny = "DW8373737"
+#
+# s2 = Samochod()
+# s2.model = "Focus"
+# s2.marka = "Ford"
+# s2.nr_rejestracyjny = "DW1828333"
+#
+# s1.print_me()
+# s2.print_me()
+
+
+# class Samochod:
+#     model = None
+#     marka = None
+#     nr_rejestracyjny = None
+#
+#     def __init__(self):
+#         print("jestem w konstruktorze")
+#
+#     def print_me(self):
+#         print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+#
+#
+# s1 = Samochod()
+# print("obiekt klasy utowrzony")
+# s1.print_me()
+# s1.model = "Omega"
+# s1.marka = "Opel"
+# s1.nr_rejestracyjny = "DW8373737"
+#
+# s1.print_me()
+
+
+
+class Samochod:
+    model = None
+    marka = None
+    nr_rejestracyjny = None
+
+    def __init__(self, model, marka, nr_rej):
+        print("jestem w konstruktorze")
+        self.model = model
+        self.marka = marka
+        self.nr_rejestracyjny = nr_rej
+
+    def print_me(self):
+        print(f"Samochód marki {self.marka} {self.model} o numerze rej. {self.nr_rejestracyjny}.")
+
+
+s1 = Samochod("Opel", "Omega", "DW8373737")
+print("obiekt klasy utowrzony")
+s1.print_me()
