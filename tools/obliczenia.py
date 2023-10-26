@@ -1,3 +1,13 @@
+def str_to_float(s):
+    wynik = None
+    error = None
+    try:
+        wynik = float(s)
+    except Exception as e:
+        error = e.__class__.__name__
+    return wynik, error
+
+
 def bmi(waga: float, wzrost: float) -> float:
     """Funkcja wylicza wskaźnik BMI.
     Ma zastosowanie w różnych sytuacjach.
