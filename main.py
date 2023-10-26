@@ -403,7 +403,7 @@
 #             ( d.get('effectiveDate'), d.get('mid') )
 #         )
 
-print(wyniki)
+# print(wyniki)
 
 
 
