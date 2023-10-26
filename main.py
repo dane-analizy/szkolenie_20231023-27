@@ -332,3 +332,7 @@
 #
 # print("wczytany konfig:")
 # print(config)
+
+
+### ZADANIE 47
+# Pobierz dane z API z adresu https://jsystems.pl/static/blog/python/dane.json i zapisz je jako plik 'dane.yaml' na dysku.
