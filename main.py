@@ -421,3 +421,35 @@
 # nowalista = [ funk(x) for x in ... if x > 10 ]
 #
 # { funk(x):funkb(x) for x in ... if x < 10 }
+
+
+
+# wczytanie danych z pliku excela
+# potrzebny dodatkowy pakiet
+# pip install openpyxl
+# import pandas as pd
+#
+# # wczytanie danych z excela - plik waluty.xlsx, arkusz waluty
+# dane = pd.read_excel('waluty.xlsx', sheet_name='waluty')
+# # print(dane)
+# # print(dane['mid'].sum())
+#
+# # lista słowników z tabeli:
+# dane_dict = dane.to_dict('records')
+# # print(dane_dict)
+# 
+# # budujemy listę słowników
+# drogie_waluty = []
+# for waluta in dane_dict:
+#     if waluta['mid'] > 1:
+#         drogie_waluty.append(waluta)
+#
+# # print(drogie_waluty)
+#
+# # dataframe z listy słowników
+# dane_xls = pd.DataFrame(drogie_waluty)
+# print(dane_xls)
+#
+# # zapis do pliku xls
+# dane_xls.to_excel("waluty_drogie.xlsx", index=False)
+
