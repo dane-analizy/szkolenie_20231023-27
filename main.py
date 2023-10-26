@@ -171,21 +171,24 @@
 #     print(wynik)
 
 
-l = 1
-try:
-    w = 1/l
-    print("policzone dzielenie")
-    ww = 1/0
-    print("policzone dzielenie przez zero")
-except Exception as e:
-    # xxx = 10/0
-    print('='*70)
-    print("Typ błędu:")
-    print(type(e))
-    print('='*70)
-    print("Komunikat błędu:")
-    print(str(e))
-    print('=' * 70)
-    print("Traceback błędu:")
-    print(e.with_traceback(None))
-    print('=' * 70)
+# l = 1
+# try:
+#     w = 1/l
+#     print("policzone dzielenie")
+#     ww = 1/0
+#     print("policzone dzielenie przez zero")
+# except Exception as e:
+#     # xxx = 10/0
+#     print('='*70)
+#     print("Typ błędu:")
+#     print(type(e))
+#     print('='*70)
+#     print("Komunikat błędu:")
+#     print(str(e))
+#     print('=' * 70)
+#     print("Traceback błędu:")
+#     print(e.with_traceback(None))
+#     print('=' * 70)
+
+
+#### ZADANIE 46
