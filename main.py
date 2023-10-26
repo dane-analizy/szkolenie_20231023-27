@@ -348,15 +348,7 @@
 # with open(plik, 'w') as f:
 #     yaml.dump(res_json, f)
 
-from typing import Optional
-import requests
 
-def get_json_from_url(url: str) -> Optional[dict]:
-    result = requests.get(url)
-    if result.status_code == 200:
-        return result.json()
-    else:
-        return None
 
 
 print(get_json_from_url('https://jsystems.pl/static/blog/python/dane.json'))
