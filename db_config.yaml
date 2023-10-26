@@ -1,0 +1,5 @@
+db_host: 4.231.54.188
+db_port: 5432
+db_name: szkolenie
+db_user: postgres
+db_pass: jsystems
