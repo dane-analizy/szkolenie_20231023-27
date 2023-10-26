@@ -141,8 +141,9 @@
 
 
 
-#### ZADANIE 44
-# Wypisz na konsoli wynik dzielenia 1 przez kolejne liczby z zakresu -10 do +10.
-# Zrób tak, żeby program nie zatrzymywał się przy zerze wykorzystując konstrukcję try-except
-
+#### ZADANIE 45
+# Wypisz na konsoli wynik dzielenia 1 przez podaną przez użytkownika liczbę.
+# Zrób tak, żeby program nie zatrzymywał się jeśli użytkownik wpisze coś błędnego.
+# Przygotuj funkcję dzielącą, przygotuj funkcję rzutującą ciąg prowadzony przez użytkownika na float.
+# W przypadku błędów - wypisz odpowiednie komunikaty.
 
