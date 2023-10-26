@@ -369,10 +369,11 @@ dane = get_json_from_url("https://api.nbp.pl/api/exchangerates/tables/a/?format=
 notowanie = []
 for waluta in dane.get('rates'):
     notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
+
+# lista krotek - list complrehention style
+# notowanie = [(waluta.get('code'), waluta.get('currency'), waluta.get('mid')) for waluta in dane.get('rates')]
 save_to_file(notowanie, 'notowanie_walut_krotki.csv', sep=';')
 
 # lista słowników
-notowanie_w = []
-for waluta in dane.get('rates'):
-    notowanie_w.append( waluta )
+notowanie_w = [ waluta for waluta in dane.get('rates')]
 save_to_file_from_dict(notowanie_w, 'notowanie_walut_słownik.csv', sep=';')
