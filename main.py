@@ -358,3 +358,15 @@
 # Korzystają z API NBP (endpoint https://api.nbp.pl/api/exchangerates/tables/a/?format=json) pobierz tablicę
 # z aktualnymi notowaniami walut i zapisz je do pliku waluty.csv, w formacie:
 # symbol waluty ; nazwa waluty ; kurs
+
+
+from tools.internet import get_json_from_url
+from tools.file_op import save_to_file
+
+dane = get_json_from_url("https://api.nbp.pl/api/exchangerates/tables/a/?format=json")[0]
+
+notowanie = []
+for waluta in dane.get('rates'):
+    notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
+
+save_to_file(notowanie, 'notowanie_walut.csv', sep=';')
