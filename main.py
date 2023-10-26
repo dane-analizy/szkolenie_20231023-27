@@ -719,3 +719,36 @@
 #
 # for auto in flota:
 #     print(auto)
+
+
+class Samochod:
+    model = None
+    marka = None
+    __nr_rejestracyjny = None
+    __uszkodzony = False
+
+    def __init__(self, model, marka, nr_rej):
+        self.model = model
+        self.marka = marka
+        self.__nr_rejestracyjny = nr_rej
+
+    def __repr__(self):
+        return f"Samochód marki {self.marka} {self.model} o numerze rej. {self.__nr_rejestracyjny} ({'uszkodzony' if self.__uszkodzony else 'sprawny'})"
+
+    def __szkoda(self, uszkodzony):
+        self.__uszkodzony = uszkodzony
+
+    def zrob_dzwona(self):
+        self.__szkoda(True)
+
+    @property
+    def czy_uszkodzony(self):
+        return self.__uszkodzony
+
+
+s = Samochod("Opel", "Omega", "DW 83737")
+print(s)
+s.zrob_dzwona()
+print(s)
+
+print(s.czy_uszkodzony)
