@@ -1,0 +1,12 @@
+adres:
+  kod: 02-019
+  miasto: Warszawa
+imie: Andrzej
+jezyki:
+- polski
+- angielski
+- Java
+- R
+- Python
+- PL/SQL
+nazwisko: Klusiewicz
