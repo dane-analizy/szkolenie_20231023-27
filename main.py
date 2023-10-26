@@ -379,6 +379,6 @@
 # save_to_file_from_dict(notowanie_w, 'notowanie_walut_słownik.csv', sep=';')
 
 
-#### ZADANIE 49
+##### ZADANIE 49
 # Korzystają z API NBP (endpoint https://api.nbp.pl/api/exchangerates/rates/a/usd/2023-01-01/2023-10-26/?format=json)
-# pobierz tablicę z historycznymi notowaniami USD i wypisz dni, w krótych dolar kosztował mniej niż 4 zł.
+# pobierz tablicę z historycznymi notowaniami USD i wypisz dni, w których dolar kosztował mniej niż 4 zł.
