@@ -370,7 +370,7 @@
 # for waluta in dane.get('rates'):
 #     notowanie.append( (waluta.get('code'), waluta.get('currency'), waluta.get('mid')) )
 #
-# # lista krotek - list complrehention style
+# # lista krotek - list comprehention style
 # # notowanie = [(waluta.get('code'), waluta.get('currency'), waluta.get('mid')) for waluta in dane.get('rates')]
 # save_to_file(notowanie, 'notowanie_walut_krotki.csv', sep=';')
 #
@@ -382,3 +382,15 @@
 ##### ZADANIE 49
 # Korzystają z API NBP (endpoint https://api.nbp.pl/api/exchangerates/rates/a/usd/2023-01-01/2023-10-26/?format=json)
 # pobierz tablicę z historycznymi notowaniami USD i wypisz dni, w których dolar kosztował mniej niż 4 zł.
+
+
+# from tools.internet import get_json_from_url
+#
+# url = "https://api.nbp.pl/api/exchangerates/rates/a/usd/2023-01-01/2023-10-26/?format=json"
+# dane = get_json_from_url(url)
+#
+# wyniki = [(d.get('effectiveDate'), d.get('mid'))
+#           for d in dane.get('rates')
+#           if d.get('mid') < 4]
+# 
+# print(wyniki)
