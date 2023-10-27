@@ -15,6 +15,8 @@
 # SQLAlchemy - pakiet do łączenia się do dowolnej bazy
 # pip install sqlalchemy
 
+# różne bazy, różne connection stringi
+# https://docs.sqlalchemy.org/en/20/core/engines.html#backend-specific-urls
 
 # podłączenie do bazy POSTGRESQL
 # from tools.config import config
