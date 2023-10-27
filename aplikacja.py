@@ -6,21 +6,26 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return "Moja Strona główna"
-
-
-@app.route('/test')
-def test_page():
-    return "strona testowa"
-
-@app.route('/shop')
-def shop_page():
-    return "Shop"
-
-@app.route('/contact')
-def contact_page():
-    return "Contact info: ....."
-
+    return """
+    <html>
+    <head>
+        <title>Moja strona</title>
+    </head>
+    <body>
+        <h1>Witam na mojej stronie!</h1>
+        <table border="1">
+        <tr>
+            <td>wiersz 1, kolumna 1</td>
+            <td>wiersz 1, kolumna 2</td>
+        </tr>
+        <tr>
+            <td>wiersz 2, kolumna 1</td>
+            <td>wiersz 2, kolumna 2</td>
+        </tr>
+        </table>
+    </body>
+    </html>
+    """
 
 if __name__ == "__main__":
     app.run(debug=True)
