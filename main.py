@@ -154,4 +154,20 @@
 
 #### ZADANIE 53
 # Z bazy postgres i tabeli cars wypisz same Skody.
-# Użyj zapytania SQL: SELECT * FROM cars WHERE makra='Skoda'
+# Użyj zapytania SQL: SELECT * FROM cars WHERE marka='Skoda'
+
+# from tools.config import load_config
+# from tools.db_op import get_sql_results
+#
+# def main():
+#     config = load_config()
+#     results = get_sql_results(config, "SELECT * FROM cars where lower(marka) = 'skoda';")
+#     print(results)
+#
+#
+# if __name__ == "__main__":
+#     print("main")
+
+
+# https://official-joke-api.appspot.com/random_joke
+# {"type":"general","setup":"What do you call a girl between two posts?","punchline":"Annette.","id":210}
