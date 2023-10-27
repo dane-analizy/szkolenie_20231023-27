@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona AUTO</title>
+</head>
+<body>
+{% include 'menu.html' %}
+
+<h1>STRONA AUTA Z BAZY</h1>
+
+<table border="1" cellpadding="10">
+<tr>
+    <th>Marka auta</th>
+    <th>Model</th>
+</tr>
+
+{% for car in cars %}
+<tr>
+    <td>{{ car.marka }}</td>
+    <td>{{ car.model }}</td>
+</tr>
+{% endfor %}
+
+</table>
+</body>
+</html>
