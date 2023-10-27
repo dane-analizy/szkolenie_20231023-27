@@ -15,6 +15,8 @@ with open("db_config.yaml", "r", encoding="utf-8") as f:
 # SQLAlchemy - pakiet do łączenia się do dowolnej bazy
 # pip install sqlalchemy
 
+from sqlalchemy import engine, text
+
 # connection string
 conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
 
