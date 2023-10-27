@@ -1,6 +1,7 @@
 # pip install Flask
 
 from flask import Flask, render_template
+from tools.file_op import get_file_content
 
 app = Flask(__name__)
 
@@ -29,6 +30,14 @@ def car_page():
             "marka": "Skoda",
             "nr_rej": "WA 12345"}
     return render_template('car_page.html', user=user, auto=auto)
+
+
+
+@app.route('/list')
+def list_page():
+    dane = get_file_content("dane.csv")
+    return render_template('car_page.html', users=dane)
+
 
 
 

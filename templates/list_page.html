@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona AUTO</title>
+</head>
+<body>
+{% include 'menu.html' %}
+
+<h1>STRONA LISTA</h1>
+<table border="1">
+
+    {% for user in users %}
+<tr>
+    <td>{{ user.first_name }}</td>
+    <td>{{ user.last_name }}</td>
+    <td>{{ user.weight }}</td>
+    <td>{{ user.height }}</td>
+</tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
