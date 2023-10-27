@@ -1,0 +1,5 @@
+# podręcznik https://jsystems.pl/static/andrzejklusiewicz/PNL.pdf
+# https://blog.jsystems.pl/show_post/Bezp%C5%82atny_kurs_Python_od_podstaw/
+# kontakt: lukasz@prokulski.science
+# blog: https://blog.prokulski.science/
+# fanpage: https://www.facebook.com/DaneAnalizy/
