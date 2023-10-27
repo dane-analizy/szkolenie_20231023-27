@@ -154,5 +154,4 @@
 
 #### ZADANIE 53
 # Z bazy postgres i tabeli cars wypisz same Skody.
-
-SELECT * FROM cars WHERE makra='Skoda'
+# Użyj zapytania SQL: SELECT * FROM cars WHERE makra='Skoda'
