@@ -85,67 +85,74 @@
 
 
 
-
+## DODAWANIE REKORDÓW DO BAZY DANYCH
 # klasa Samochód
 # wczytamy do niej dane z csv
 # auta zapiszemy do bazy danych
 # wyświetlimy dane z bazy
 
-from tools.file_op import get_file_content
-from tools.db_op import create_db_connection
-from tools.config import load_config
-from sqlalchemy import  text
+# from tools.file_op import get_file_content
+# from tools.db_op import create_db_connection
+# from tools.config import load_config
+# from sqlalchemy import  text
+#
+# class Car:
+#     model = None
+#     marka = None
+#     rocznik = None
+#     nr_rej = None
+#
+#     def __init__(self, marka, model, rocznik, nr_rej):
+#         self.model = model
+#         self.marka = marka
+#         self.rocznik = rocznik
+#         self.nr_rej = nr_rej
+#
+#     def __repr__(self):
+#         return f"{self.model=} {self.marka=} {self.rocznik=} {self.nr_rej=}"
+#
+#     @property
+#     def gmodel(self):
+#         return self.model
+#
+#     @property
+#     def gmarka(self):
+#         return self.marka
+#
+#     @property
+#     def grocznik(self):
+#         return self.rocznik
+#
+#     def set_rocznik(self, r):
+#         self.rocznik = r
+#
+#     @property
+#     def numer_rejestracyjny(self):
+#         return self.nr_rej
+#
+#
+# cars = get_file_content('auta.csv')
+#
+# #flota = [ Car(model=car[0], marka=car[1], rocznik=(car[2]), nr_rej=car[3])  for car in cars ]
+# flota = [ Car(*car)  for car in cars ]
+#
+# config = load_config()
+# conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+# db_conn = create_db_connection(conn_str)
+#
+# for car in flota:
+#     sql_query = f"""
+#           INSERT INTO cars (marka,model,rocznik,nr_rej)
+#           VALUES('{car.gmarka}', '{car.gmodel}', '{car.grocznik}', '{car.numer_rejestracyjny}');
+#           """
+#     db_conn.execute(text(sql_query))
+#     db_conn.commit()
+#
+# db_conn.close()
 
-class Car:
-    model = None
-    marka = None
-    rocznik = None
-    nr_rej = None
-
-    def __init__(self, marka, model, rocznik, nr_rej):
-        self.model = model
-        self.marka = marka
-        self.rocznik = rocznik
-        self.nr_rej = nr_rej
-
-    def __repr__(self):
-        return f"{self.model=} {self.marka=} {self.rocznik=} {self.nr_rej=}"
-
-    @property
-    def gmodel(self):
-        return self.model
-
-    @property
-    def gmarka(self):
-        return self.marka
-
-    @property
-    def grocznik(self):
-        return self.rocznik
-
-    def set_rocznik(self, r):
-        self.rocznik = r
-
-    @property
-    def numer_rejestracyjny(self):
-        return self.nr_rej
 
 
-cars = get_file_content('auta.csv')
+#### ZADANIE 53
+# Z bazy postgres i tabeli cars wypisz same Skody.
 
-#flota = [ Car(model=car[0], marka=car[1], rocznik=(car[2]), nr_rej=car[3])  for car in cars ]
-flota = [ Car(*car)  for car in cars ]
-
-config = load_config()
-conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
-db_conn = create_db_connection(conn_str)
-
-for car in flota:
-    sql_query = f"""
-          INSERT INTO cars (marka,model,rocznik,nr_rej)
-          VALUES('{car.gmarka}', '{car.gmodel}', '{car.grocznik}', '{car.numer_rejestracyjny}');
-          """
-    db_conn.execute(text(sql_query))
-    db_conn.commit()
-
-db_conn.close()
+SELECT * FROM cars WHERE makra='Skoda'
