@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona AUTO</title>
+</head>
+<body>
+{% include 'menu.html' %}
+
+<h1>STRONA AUTO</h1>
+
+<p>Użytkownik:</p>
+<ul>
+    <li>Login: {{ user.login }}</li>
+    <li>Imię: {{ user.imie }}</li>
+    <li>Nazwisko: {{ user.nazwisko }}</li>
+    <li>Wiek: {{ user.wiek }}</li>
+</ul>
+
+<p>Samochód:</p>
+<ul>
+    <li>Marka: {{ auto.marka }}</li>
+    <li>Model: {{ auto.model }}</li>
+    <li>Blachy: {{ auto.nr_rej }}</li>
+</ul>
+
+</body>
+</html>

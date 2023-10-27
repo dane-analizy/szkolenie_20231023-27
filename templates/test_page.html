@@ -5,12 +5,15 @@
     <title>Strona TEST</title>
 </head>
 <body>
-        <h1>STRONA TEST</h1>
+{% include 'menu.html' %}
+
+<h1>STRONA TEST</h1>
+
 <ul>
     <li>Login: {{ param.login }}</li>
     <li>Imię: {{ param.imie }}</li>
     <li>Nazwisko: {{ param.nazwisko }}</li>
     <li>Wiek: {{ param.wiek }}</li>
-    </ul>
+</ul>
 </body>
 </html>

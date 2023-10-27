@@ -19,6 +19,20 @@ def test_page():
     return render_template('test_page.html', param=user)
 
 
+@app.route('/auto')
+def car_page():
+    user = {"login": "login_usera",
+            "imie": "Jan",
+            "nazwisko": "Kowalski",
+            "wiek": 40}
+    auto = {"model": "Kodiaq",
+            "marka": "Skoda",
+            "nr_rej": "WA 12345"}
+    return render_template('car_page.html', user=user, auto=auto)
+
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
