@@ -175,3 +175,24 @@
 
 # https://official-joke-api.appspot.com/random_joke
 # {"type":"general","setup":"What do you call a girl between two posts?","punchline":"Annette.","id":210}
+
+
+## logowanie
+# dokumentacja https://docs.python.org/3/library/logging.html#
+# import logging
+#
+# logging.basicConfig(format="%(asctime)s | %(filename)s | %(levelname)s | %(msg)s")
+#
+# logger = logging.getLogger("nasz_logger")
+# logger.setLevel(logging.DEBUG)
+#
+# file_handler = logging.FileHandler("logowanie.log")
+# file_handler.setLevel(logging.ERROR)
+# file_handler.setFormatter(logging.Formatter("PLIK %(asctime)s | %(filename)s | %(levelname)s | %(msg)s"))
+#
+# logger.addHandler(file_handler)
+#
+# logger.info("komunikat info")
+# logger.error("komunikat error")
+# logger.warning("komunikat warning")
+# logger.debug("komunikat debug")
