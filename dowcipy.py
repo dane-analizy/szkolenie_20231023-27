@@ -30,9 +30,9 @@ def insert_joke(joke, db_conn):
     sql_query = f"""
     INSERT INTO jokes (type, setup, punchline, id)
     VALUES (
-    '{joke['type']}',
-    '{joke['setup']}',
-    '{joke['punchline']}',
+    "{joke['type']}",
+    "{joke['setup']}",
+    "{joke['punchline']}",
     {joke['id']}
     );
     """
