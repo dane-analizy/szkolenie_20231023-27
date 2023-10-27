@@ -16,3 +16,7 @@ def test_page():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+#### ZADANIE 54
+# Przygotuj w aplikacji Flask 3 podstrony
