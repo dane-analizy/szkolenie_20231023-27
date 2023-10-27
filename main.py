@@ -1,7 +1,7 @@
-import yaml
-
-with open("db_config.yaml", "r", encoding="utf-8") as f:
-    config = yaml.safe_load(f)
+# import yaml
+#
+# with open("db_config.yaml", "r", encoding="utf-8") as f:
+#     config = yaml.safe_load(f)
 
 # pakiet do łączenia się z postgresql
 # pip install psycopg2
@@ -15,6 +15,8 @@ with open("db_config.yaml", "r", encoding="utf-8") as f:
 # SQLAlchemy - pakiet do łączenia się do dowolnej bazy
 # pip install sqlalchemy
 
+
+from tools.config import config
 from sqlalchemy import engine, text
 
 # connection string
