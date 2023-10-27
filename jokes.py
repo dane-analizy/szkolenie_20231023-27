@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from tools.db_op import get_sql_results
 from tools.config import load_config
 
@@ -38,9 +38,20 @@ def jokes(category):
     return render_template("joke.html", jokes=jokes_list, types=types)
 
 
+@app.route('/formularz', methods=['GET', 'POST'])
+def formularz():
+    print(request.json)
+    return f"{request.json.get('klucz')}"
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
 
 ### ZADANIE 58
 # Na bazie powyższego kodu przygtuj routing pokazujący dowcipy z danej kategorii.
+
+
+# Kurs Flaska
+# https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
