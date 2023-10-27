@@ -11,7 +11,12 @@ def home_page():
 
 @app.route('/test')
 def test_page():
-    return render_template('test_page.html')
+    user = {"login": "login_usera",
+            "imie": "Jan",
+            "nazwisko": "Kowalski",
+            "wiek": 40}
+
+    return render_template('test_page.html', param=user)
 
 
 
