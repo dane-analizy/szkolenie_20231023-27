@@ -36,11 +36,13 @@ def car_page():
 @app.route('/list')
 def list_page():
     dane = get_file_content("dane.csv")
-    return render_template('car_page.html', users=dane)
+    dane = [ {"first_name":el[0],
+            "last_name":el[1],
+            "weight":el[2],
+            "height":el[3]}
+             for el in dane ]
 
-
-
-
+    return render_template('list_page.html', users=dane)
 
 
 if __name__ == "__main__":
