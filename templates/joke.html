@@ -6,10 +6,13 @@
 </head>
 <body>
 
-{% for type in types %}
+{% include 'jokes_list.html' %}
+<hr/>
+
+{% for joke in jokes %}
 <ul>
-    <li>{{ joke.setup }}</li>
-    <li>{{ joke.punchline }}</li>
+    <li>{{ joke[0] }}</li>
+    <li>{{ joke[1] }}</li>
 </ul>
 <hr/>
 {% endfor %}

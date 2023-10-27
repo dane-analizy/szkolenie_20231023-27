@@ -29,10 +29,18 @@ def jokes_list():
     return render_template("jokes_types.html", types=types)
 
 
+@app.route('/jokes/<category>')
+def jokes(category):
+    types = [{"name": t[0].upper(), "url": t[0]}
+             for t in get_sql_results(config, "select distinct type from jokes;")
+             ]
+    jokes_list = get_sql_results(config, f"select setup,punchline from jokes where type = '{category}';")
+    return render_template("joke.html", jokes=jokes_list, types=types)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
 
 
 ### ZADANIE 58
-# Na bazie powyższego kodu przygtuj routing pokazujący dowcipz danej kategorii.
+# Na bazie powyższego kodu przygtuj routing pokazujący dowcipy z danej kategorii.

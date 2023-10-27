@@ -1,0 +1,6 @@
+<p>Lista kategorii dowcipów:</p>
+<ul>
+{% for type in types %}
+    <li><a href="/jokes/{{ type.url }}">{{ type.name }}</a></li>
+{% endfor %}
+</ul>

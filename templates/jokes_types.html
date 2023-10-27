@@ -6,10 +6,7 @@
 </head>
 <body>
 
-<ul>
-{% for type in types %}
-    <li><a href="/jokes/{{ type.url }}">{{ type.name }}</a></li>
-{% endfor %}
-</ul>
+{% include 'jokes_list.html' %}
+
 </body>
 </html>
