@@ -30,7 +30,7 @@
 
 
 # podłączenie do bazy SQLITE
-from tools.config import config
+# from tools.config import config
 # from sqlalchemy import engine, text
 # #
 # # # connection string
@@ -44,22 +44,42 @@ from tools.config import config
 
 
 # wczytanie danych z bazy danych
-from tools.config import config
-from sqlalchemy import engine, text
+# from tools.config import config
+# from sqlalchemy import engine, text
+#
+# # connection string
+# conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+#
+# # podłączenie do bazy
+# db_engine = engine.create_engine(conn_str)
+# db_connection = db_engine.connect()
+#
+# # zapytanie sql
+# sql_query = "SELECT * FROM players;"
+# # wywołanie zapytania
+# sql_results = db_connection.execute(text(sql_query))
+#
+# # przejście przez wyniki
+# for result in sql_results:
+#     print(result[1], result[3]*100)
+#
+# db_connection.close()
+#
+# #### ZADANIE 52
+# # Przepisz dane z tabeli 'players' w bazie PostgreSQL do pliku csv o nazwie 'players.csv'
+#
+# sql_results_list = list(sql_results)
 
-# connection string
-conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
 
-# podłączenie do bazy
-db_engine = engine.create_engine(conn_str)
-db_connection = db_engine.connect()
+# rozwiązanie
+# 1. w tools.config - zmiana na funkcję
 
-# zapytanie sql
-sql_query = "SELECT * FROM players;"
-# wywołanie zapytania
-sql_results = db_connection.execute(text(sql_query))
+from tools.config import load_config
+from tools.db_op import get_sql_results
+from tools.file_op import save_to_file
 
-# przejście przez wyniki
-for result in sql_results:
-    print(result[1], result[3]*100)
+config = load_config()
+results = get_sql_results(config, "SELECT * FROM players;")
+print(results)
+save_to_file(results, "players.csv")
 
