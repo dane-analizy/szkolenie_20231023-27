@@ -27,19 +27,17 @@ def create_table(db_conn):
 
 
 def insert_joke(joke, db_conn):
+    # użycie słownika jako sposobu na przekazanie parametrów do zapytania SQL
     sql_query = f"""
     INSERT INTO jokes (type, setup, punchline, id)
-    VALUES (
-    "{joke['type']}",
-    "{joke['setup']}",
-    "{joke['punchline']}",
-    {joke['id']}
-    );
+    VALUES (:type, :setup, :punchline, :id);
     """
-    db_conn.execute(text(sql_query))
+    s = text(sql_query)
+    db_conn.execute(s, joke)
     db_conn.commit()
 
-
+# t = text("SELECT * FROM users WHERE id=:user_id")
+# result = connection.execute(t, user_id=12)
 
 def main():
     # ładujemy konfigurację
