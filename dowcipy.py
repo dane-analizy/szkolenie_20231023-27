@@ -8,7 +8,7 @@ from tools.internet import get_json_from_url
 from tools.config import load_config
 from tools.db_op import create_db_connection, create_connection_string
 from sqlalchemy import text
-
+import time
 
 JOKES_URL = "https://official-joke-api.appspot.com/random_joke"
 
@@ -50,13 +50,17 @@ def main():
     # jeśli trzeba to tworzymy tabelę
     create_table(db_conn)
 
-    # pobieramy dowcip z API
-    joke = get_json_from_url(JOKES_URL)
-    if joke:
-        # jeśli się udało - wyświetlamy go
-        print(f"- {joke.get('setup')}\n- {joke.get('punchline')}\n\n")
-        # i zapisujemy do bazy
-        insert_joke(joke, db_conn)
+    # w pętli co 1 sekundę pobieramy dowcip z API
+    for _ in range(100):
+        joke = get_json_from_url(JOKES_URL)
+        if joke:
+            # jeśli się udało - wyświetlamy go
+            print(f"- {joke.get('setup')}\n- {joke.get('punchline')}\n\n")
+            # i zapisujemy do bazy
+            insert_joke(joke, db_conn)
+
+        # czekamy 1 sekundę
+        time.sleep(1)
 
     db_conn.close()
 
