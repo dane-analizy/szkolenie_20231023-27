@@ -1,6 +1,6 @@
 from sqlalchemy import engine, text
 
-def __create_connection_string(config):
+def create_connection_string(config):
     return f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
 
 
@@ -15,7 +15,7 @@ def execute_sql(db_connection, sql_query):
 
 
 def get_sql_results(config, sql_query):
-    conn_str = __create_connection_string(config)
+    conn_str = create_connection_string(config)
     db_conn = create_db_connection(conn_str)
     results = execute_sql(db_conn, sql_query)
     db_conn.close()
