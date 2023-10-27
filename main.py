@@ -22,4 +22,5 @@ conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{conf
 
 # text("SELECT * FROM tabelka;")
 db_engine = engine.create_engine(conn_str)
+db_engine.connect()
 print(db_engine)
