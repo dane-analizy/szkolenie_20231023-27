@@ -10,14 +10,15 @@
 <h1>STRONA LISTA</h1>
 <table border="1" cellpadding="10">
 
-    {% for user in users %}
+{% for user in users %}
 <tr>
     <td>{{ user.first_name }}</td>
     <td>{{ user.last_name }}</td>
     <td>{{ user.weight }}</td>
     <td>{{ user.height }}</td>
 </tr>
-    {% endfor %}
+{% endfor %}
+
 </table>
 
 </body>
