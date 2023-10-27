@@ -17,4 +17,7 @@ with open("db_config.yaml", "r", encoding="utf-8") as f:
 
 # connection string
 conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
-print(conn_str)
+
+# text("SELECT * FROM tabelka;")
+db_engine = engine.create_engine(conn_str)
+print(db_engine)
