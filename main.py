@@ -16,13 +16,28 @@
 # pip install sqlalchemy
 
 
+# podłączenie do bazy POSTGRESQL
+# from tools.config import config
+# from sqlalchemy import engine, text
+#
+# # connection string
+# conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+#
+# # text("SELECT * FROM tabelka;")
+# db_engine = engine.create_engine(conn_str)
+# db_connection = db_engine.connect()
+# print(db_engine, db_connection)
+
+
+# podłączenie do bazy SQLITE
 from tools.config import config
 from sqlalchemy import engine, text
-
-# connection string
-conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
-
-# text("SELECT * FROM tabelka;")
+#
+# # connection string
+conn_str = "sqlite:///baza_plikowa.sqlite"
 db_engine = engine.create_engine(conn_str)
 db_connection = db_engine.connect()
+print(db_engine, db_connection)
+
+db_connection.close()
 print(db_engine, db_connection)
