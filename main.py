@@ -196,3 +196,12 @@
 # logger.error("komunikat error")
 # logger.warning("komunikat warning")
 # logger.debug("komunikat debug")
+
+#
+# print(__name__)
+#
+# from tools import cos
+# cos()
+#
+# from tools.config import kto_to
+# kto_to()
