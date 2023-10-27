@@ -31,13 +31,35 @@
 
 # podłączenie do bazy SQLITE
 from tools.config import config
-from sqlalchemy import engine, text
+# from sqlalchemy import engine, text
+# #
+# # # connection string
+# conn_str = "sqlite:///baza_plikowa.sqlite"
+# db_engine = engine.create_engine(conn_str)
+# db_connection = db_engine.connect()
+# print(db_engine, db_connection)
 #
-# # connection string
-conn_str = "sqlite:///baza_plikowa.sqlite"
+# db_connection.close()
+# print(db_engine, db_connection)
+
+
+# wczytanie danych z bazy danych
+from tools.config import config
+from sqlalchemy import engine, text
+
+# connection string
+conn_str = f"postgresql+psycopg2://{config['db_user']}:{config['db_pass']}@{config['db_host']}:{config['db_port']}/{config['db_name']}"
+
+# podłączenie do bazy
 db_engine = engine.create_engine(conn_str)
 db_connection = db_engine.connect()
-print(db_engine, db_connection)
 
-db_connection.close()
-print(db_engine, db_connection)
+# zapytanie sql
+sql_query = "SELECT * FROM players;"
+# wywołanie zapytania
+sql_results = db_connection.execute(text(sql_query))
+
+# przejście przez wyniki
+for result in sql_results:
+    print(result[1], result[3]*100)
+

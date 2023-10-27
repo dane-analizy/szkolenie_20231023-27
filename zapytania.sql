@@ -11,13 +11,13 @@ insert into players (first_name,last_name,height,weight)
 values ('Jan', 'Kowalski', 1.84, 85);
 
 insert into players (first_name,last_name,height,weight)
-('Marian', 'Nowak', 1.90, 50);
+values ('Marian', 'Nowak', 1.90, 50);
 
 insert into players (first_name,last_name,height,weight)
-('Zdzisław', 'Dyrman', 1.73 ,74);
+values ('Zdzisław', 'Dyrman', 1.73 ,74);
 
 insert into players (first_name,last_name,height,weight)
-('Zenon', 'Brzęczyk', 1.64, 95);
+values ('Zenon', 'Brzęczyk', 1.64, 95);
 
 insert into players (first_name,last_name,height,weight)
 values ('Chuck','Norris', 1.82, 78);
