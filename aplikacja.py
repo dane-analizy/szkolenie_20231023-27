@@ -29,3 +29,6 @@ if __name__ == "__main__":
 
 #### ZADANIE 55
 # Przygotuj dodatkowy template dla aplikacji Flask
+
+#### ZADANIE 56
+# Przygotuj template, który wyświetli dane ze słownika opisującego samochód.
