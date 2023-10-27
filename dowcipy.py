@@ -23,7 +23,8 @@ def create_table(db_conn):
     );
     """
     db_conn.execute(text(sql_query))
-    db_conn.commit()
+    res = db_conn.commit()
+    print(res)
 
 
 def insert_joke(joke, db_conn):
@@ -45,6 +46,7 @@ def main():
 
     # tworzymy połączenie do bazy
     conn_str = create_connection_string(config)
+    print(conn_str)
     db_conn = create_db_connection(conn_str)
 
     # jeśli trzeba to tworzymy tabelę
@@ -63,6 +65,7 @@ def main():
         time.sleep(1)
 
     db_conn.close()
+
 
 if __name__ == "__main__":
     main()
