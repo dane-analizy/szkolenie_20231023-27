@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return render_template('templates/home_page.html')
+    return render_template('home_page.html')
+
 
 if __name__ == "__main__":
     app.run(debug=True)
@@ -14,3 +15,6 @@ if __name__ == "__main__":
 
 #### ZADANIE 54
 # Przygotuj w aplikacji Flask 3 podstrony
+
+#### ZADANIE 54
+# Przygotuj dodatkowy template dla aplikacji Flask
