@@ -57,3 +57,7 @@ if __name__ == "__main__":
 
 #### ZADANIE 56
 # Przygotuj template, który wyświetli dane ze słownika opisującego samochód.
+
+
+#### ZADANIE 57
+# Przygotuj template wyświeltający listę danych pobranych z bazy danych - np. listę samochodów
